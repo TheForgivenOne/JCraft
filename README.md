@@ -1,6 +1,6 @@
-# JCraft
+# JCraft - E-commerce Store
 
-A monorepo for the JCraft project, built with Next.js, Vercel, Convex, Clerk, and Shadcn UI.
+A modern e-commerce platform built with Next.js, Vercel, Convex, Clerk, and Shadcn UI.
 
 ## Project Structure
 
@@ -29,11 +29,13 @@ packages/
 ## Getting Started
 
 1. Install dependencies:
+
    ```bash
    pnpm install
    ```
 
 2. Start the development server:
+
    ```bash
    pnpm dev
    ```

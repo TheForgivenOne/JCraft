@@ -13,8 +13,8 @@
   "aliases": {
     "components": "@jcraft/ui",
     "utils": "@jcraft/utils",
-    "hooks": "@jcraft/hooks",
-    "lib": "@jcraft/lib",
-    "ui": "@jcraft/ui/components"
+    "hooks": "@jcraft/ui/hooks",
+    "lib": "@jcraft/ui/lib",
+    "ui": "@jcraft/ui"
   }
 }

@@ -3,6 +3,7 @@
 Based on the shadcn/ui documentation and common usage patterns, here are the components we should consider adding to the JCraft project:
 
 ## Essential Components
+
 - [ ] Alert
 - [ ] Alert Dialog
 - [ ] Avatar
@@ -27,6 +28,7 @@ Based on the shadcn/ui documentation and common usage patterns, here are the com
 - [ ] Tooltip
 
 ## Advanced Components
+
 - [ ] Accordion
 - [ ] Aspect Ratio
 - [ ] Calendar

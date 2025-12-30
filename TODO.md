@@ -1,6 +1,7 @@
 # JCraft Setup Tasks
 
 ## Completed
+
 - [x] Initialize git repository
 - [x] Create monorepo structure (apps and packages directories)
 - [x] Set up package.json with workspaces
@@ -17,7 +18,8 @@
 - [x] Configure shadcn/ui for monorepo
 
 ## Remaining
-- [ ] Install and configure pnpm
+
+- [x] Install and configure pnpm
 - [ ] Set up ESLint and Prettier
 - [ ] Add more UI components as needed
 - [ ] Implement Convex schema and functions
