@@ -23,6 +23,18 @@ import {
 } from 'lucide-react';
 import Sidebar from '../../components/Sidebar';
 
+// By defining the stats array outside the component, we prevent it from being recreated on every render.
+// This is a small but impactful optimization that reduces unnecessary memory allocation and processing.
+const getStats = (orders: any[] | undefined) => [
+  {
+    name: 'Total Orders',
+    value: orders ? orders.length : 0,
+    icon: ShoppingCartIcon,
+  },
+  { name: 'Total Spent', value: '$0', icon: PackageIcon },
+  { name: 'Favorite Category', value: 'N/A', icon: TrendingUpIcon },
+];
+
 export default function DashboardPage() {
   const { isSignedIn, user } = useUser();
   const router = useRouter();
@@ -52,16 +64,7 @@ export default function DashboardPage() {
     return null; // Redirecting to home
   }
 
-  // Mock stats for the dashboard
-  const stats = [
-    {
-      name: 'Total Orders',
-      value: orders ? orders.length : 0,
-      icon: ShoppingCartIcon,
-    },
-    { name: 'Total Spent', value: '$0', icon: PackageIcon },
-    { name: 'Favorite Category', value: 'N/A', icon: TrendingUpIcon },
-  ];
+  const stats = getStats(orders);
 
   return (
     <div className="min-h-screen flex">
