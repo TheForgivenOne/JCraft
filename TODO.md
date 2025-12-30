@@ -24,3 +24,4 @@
 - [ ] Set up CI/CD pipeline
 - [ ] Add unit and integration tests
 - [ ] Deploy to Vercel
+- [x] Update to patched Next.js version for CVE-2025-55182

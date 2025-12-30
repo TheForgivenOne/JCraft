@@ -40,6 +40,10 @@ packages/
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## Security Notice
+
+**Important Security Update**: This project has been updated to address CVE-2025-55182, a critical remote code execution vulnerability in React Server Components. Next.js has been updated to version 15.0.5 or later which contains the security patch. For more information about this vulnerability, see the [React security blog post](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components).
+
 ## Scripts
 
 - `pnpm dev` - Start all apps in development mode
