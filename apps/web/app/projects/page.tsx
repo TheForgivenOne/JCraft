@@ -74,36 +74,40 @@ export default function ProjectsPage() {
 
           {projects && projects.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {projects.map(project => (
-                <Card
-                  key={project._id}
-                  className="hover:shadow-md transition-shadow"
-                >
-                  <CardHeader>
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <CardTitle>{project.name}</CardTitle>
-                        <CardDescription>
-                          {project.description || 'No description provided'}
-                        </CardDescription>
-                      </div>
-                      <Button variant="ghost" size="icon">
-                        <MoreHorizontalIcon className="h-4 w-4" />
-                      </Button>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-gray-500">
-                      Created:{' '}
-                      {new Date(project.createdAt).toLocaleDateString()}
-                    </p>
-                  </CardContent>
-                  <CardFooter className="flex justify-between">
-                    <Button variant="outline">View Details</Button>
-                    <Button>Open Project</Button>
-                  </CardFooter>
-                </Card>
-              ))}
+              {projects.map(
+                project =>
+                  'name' in project &&
+                  'description' in project && (
+                    <Card
+                      key={project._id}
+                      className="hover:shadow-md transition-shadow"
+                    >
+                      <CardHeader>
+                        <div className="flex justify-between items-start">
+                          <div>
+                            <CardTitle>{project.name}</CardTitle>
+                            <CardDescription>
+                              {project.description || 'No description provided'}
+                            </CardDescription>
+                          </div>
+                          <Button variant="ghost" size="icon">
+                            <MoreHorizontalIcon className="h-4 w-4" />
+                          </Button>
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-sm text-gray-500">
+                          Created:{' '}
+                          {new Date(project.createdAt).toLocaleDateString()}
+                        </p>
+                      </CardContent>
+                      <CardFooter className="flex justify-between">
+                        <Button variant="outline">View Details</Button>
+                        <Button>Open Project</Button>
+                      </CardFooter>
+                    </Card>
+                  )
+              )}
             </div>
           ) : (
             <Card>

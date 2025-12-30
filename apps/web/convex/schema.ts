@@ -35,4 +35,21 @@ export default defineSchema({
     quantity: v.number(),
     price: v.number(), // Price in cents at time of purchase
   }).index('by_order', ['orderId']),
+  projects: defineTable({
+    name: v.string(),
+    description: v.optional(v.string()),
+    ownerId: v.id('users'),
+    createdAt: v.number(),
+  }).index('by_owner', ['ownerId']),
+  tasks: defineTable({
+    title: v.string(),
+    description: v.optional(v.string()),
+    projectId: v.id('projects'),
+    status: v.union(
+      v.literal('todo'),
+      v.literal('in_progress'),
+      v.literal('done')
+    ),
+    createdAt: v.number(),
+  }).index('by_project', ['projectId']),
 });

@@ -14,6 +14,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@jcraft/ui';
 import { useState } from 'react';
+import type { Route } from 'next';
 
 interface SidebarProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -66,7 +67,7 @@ const Sidebar = ({ className }: SidebarProps) => {
               return (
                 <li key={item.name}>
                   <Link
-                    href={item.href}
+                    href={item.href as Route}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     <Button
