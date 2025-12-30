@@ -14,20 +14,29 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "clean": "rm -rf node_modules && pnpm --recursive clean",
-    "convex": "npx convex"
+    "convex": "npx convex",
+    "test": "vitest"
   },
   "devDependencies": {
+    "@swc/core": "^1.15.8",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@typescript-eslint/eslint-plugin": "^8.51.0",
     "@typescript-eslint/parser": "^8.51.0",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@vitest/ui": "^4.0.16",
     "eslint": "^8.0.0",
     "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "jsdom": "^27.4.0",
     "prettier": "^3.0.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
   },
   "engines": {
     "node": ">=18.17.0"

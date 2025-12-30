@@ -16,4 +16,7 @@ export default defineConfig({
     'lucide-react',
     'tailwindcss-animate',
   ],
+  banner: {
+    js: '"use client";',
+  },
 });
