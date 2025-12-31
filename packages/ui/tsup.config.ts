@@ -16,4 +16,5 @@ export default defineConfig({
     'lucide-react',
     'tailwindcss-animate',
   ],
+  jsx: 'react-jsx',
 });

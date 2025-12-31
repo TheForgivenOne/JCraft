@@ -8,4 +8,6 @@ export default defineConfig({
     'clsx',
     'tailwind-merge',
   ],
+  sourcemap: true,
+  clean: true,
 });
