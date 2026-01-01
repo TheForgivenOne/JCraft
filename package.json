@@ -3,12 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "workspaces": [
-    "apps/*",
     "packages/*"
   ],
   "scripts": {
-    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
-    "build": "pnpm --filter \"@jcraft/types\" build && pnpm --filter \"@jcraft/utils\" build && pnpm --filter \"@jcraft/ui\" build && pnpm --filter \"./apps/*\" build",
+    "dev": "pnpm --parallel --filter \"./packages/*\" dev",
+    "build": "pnpm --filter \"@jcraft/types\" build && pnpm --filter \"@jcraft/utils\" build && pnpm --filter \"@jcraft/ui\" build && pnpm --filter \"./packages/*\" build",
     "lint": "pnpm --recursive lint",
     "lint:fix": "pnpm --recursive lint --fix",
     "format": "prettier --write .",
