@@ -23,13 +23,17 @@ const Sidebar = ({ className }: SidebarProps) => {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const navItems = [
+  const navItems: {
+    name: string;
+    href: React.ComponentProps<typeof Link>['href'];
+    icon: React.ElementType;
+  }[] = [
     { name: 'Dashboard', href: '/dashboard', icon: HomeIcon },
     { name: 'Products', href: '/products', icon: StoreIcon },
     { name: 'Orders', href: '/orders', icon: ShoppingCartIcon },
-    { name: 'Inventory', href: '/inventory', icon: PackageIcon },
-    { name: 'Customers', href: '/customers', icon: UsersIcon },
-    { name: 'Settings', href: '/settings', icon: SettingsIcon },
+    { name: 'Projects', href: '/projects', icon: PackageIcon },
+    // { name: 'Customers', href: '/customers', icon: UsersIcon },
+    // { name: 'Settings', href: '/settings', icon: SettingsIcon },
   ];
 
   return (
