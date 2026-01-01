@@ -1,3 +1,5 @@
+'use client';
+
 // Export all UI components from the JCraft UI package
 
 export { Button } from './button';
