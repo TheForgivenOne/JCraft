@@ -25,6 +25,7 @@ import {
 import { api } from '../../convex/_generated/api';
 import { useQuery } from 'convex/react';
 import Sidebar from '../../components/Sidebar';
+import { Suspense } from 'react';
 
 // Define types
 type Product = {
@@ -59,7 +60,8 @@ const PRICE_RANGES = [
   { label: '$100+', min: 10000, max: Infinity },
 ];
 
-export default function ProductsPage() {
+// Wrap the component that uses useSearchParams in a Suspense boundary
+function ProductsPageContent() {
   const { isSignedIn } = useUser();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -533,5 +535,14 @@ export default function ProductsPage() {
         </main>
       </div>
     </div>
+  );
+}
+
+// Main page component that wraps the content with Suspense
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={<div>Loading products...</div>}>
+      <ProductsPageContent />
+    </Suspense>
   );
 }

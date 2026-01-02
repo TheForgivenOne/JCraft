@@ -1,20 +1,30 @@
-import { authMiddleware } from '@clerk/nextjs/server';
+import { clerkMiddleware } from '@clerk/nextjs/server';
 
-export default authMiddleware({
-  publicRoutes: [
-    '/',
-    '/api/webhook',
-    '/sign-in(.*)',
-    '/sign-up(.*)',
-    '/products(.*)', // Allow access to all product pages
-    '/categories(.*)', // Allow access to all category pages
-    '/search(.*)', // Allow access to search functionality
-    '/cart(.*)', // Allow access to cart (guests can add items)
-    '/checkout(.*)', // Allow access to checkout (for guest checkout)
-    '/deals(.*)', // Allow access to deals/promotions
-  ]
+export default clerkMiddleware((auth, req) => {
+  // Get the pathname of the request
+  const { pathname } = req.nextUrl;
+
+  // Define public routes that don't require authentication
+  const isPublicRoute =
+    pathname === '/' ||
+    pathname.startsWith('/api/webhook') ||
+    pathname.startsWith('/sign-in') ||
+    pathname.startsWith('/sign-up') ||
+    pathname.startsWith('/products') ||
+    pathname.startsWith('/categories') ||
+    pathname.startsWith('/search') ||
+    pathname.startsWith('/cart') ||
+    pathname.startsWith('/checkout') ||
+    pathname.startsWith('/deals');
+
+  // If it's a public route, return nothing (allow access)
+  if (isPublicRoute) {
+    return;
+  }
+
+  // For all other routes, require authentication
+  // Clerk will handle the authentication logic
 });
-
 
 export const config = {
   matcher: [
