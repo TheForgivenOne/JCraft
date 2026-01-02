@@ -1,0 +1,10 @@
+{
+  "name": "@jcraft/eslint-config",
+  "version": "0.0.1",
+  "private": true,
+  "main": "nextjs.js",
+  "dependencies": {
+    "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.0.0"
+  }
+}

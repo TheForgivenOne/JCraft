@@ -8,7 +8,7 @@ A modern e-commerce platform built with Next.js, Vercel, Convex, Clerk, and Shad
 apps/
 ├── web/          # Main Next.js web application
 ├── docs/         # Documentation site
-packages/
+libs/
 ├── ui/           # Shared UI components
 ├── types/        # Shared TypeScript types
 ├── utils/        # Shared utilities

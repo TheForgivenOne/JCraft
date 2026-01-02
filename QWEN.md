@@ -19,7 +19,7 @@ JCraft is a modern monorepo project built with Next.js, Vercel, Convex, Clerk, a
 apps/
 ├── web/          # Main Next.js web application
 ├── docs/         # Documentation site
-packages/
+libs/
 ├── ui/           # Shared UI components
 ├── types/        # Shared TypeScript types
 ├── utils/        # Shared utilities

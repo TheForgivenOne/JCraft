@@ -3,17 +3,23 @@
   "version": "0.0.1",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "apps/*",
+    "apps/*/*",
+    "libs/*",
+    "services/*",
+    "tooling/*"
   ],
   "scripts": {
-    "dev": "pnpm --parallel --filter \"./packages/*\" dev",
-    "build": "pnpm --filter \"@jcraft/types\" build && pnpm --filter \"@jcraft/utils\" build && pnpm --filter \"@jcraft/ui\" build && pnpm --filter \"./packages/*\" build",
+    "dev": "pnpm --parallel --filter \"./apps/*\" --filter \"./apps/*/*\" dev",
+    "build": "pnpm --filter \"@jcraft/types\" build && pnpm --filter \"@jcraft/utils\" build && pnpm --filter \"@jcraft/ui\" build && pnpm --filter \"./apps/*\" --filter \"./apps/*/*\" build",
     "lint": "pnpm --recursive lint",
     "lint:fix": "pnpm --recursive lint --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "clean": "rm -rf node_modules && pnpm --recursive clean",
-    "convex": "npx convex"
+    "convex": "npx convex",
+    "audit": "pnpm audit --audit-level moderate",
+    "audit:fix": "pnpm audit --fix"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
