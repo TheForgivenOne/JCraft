@@ -19,7 +19,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        variables: {
+          // Customize colors to match your Tailwind theme
+          colorPrimary: '#3b82f6', // blue-500
+          colorBackground: '#ffffff',
+          colorText: '#1f2937',
+          colorInputBackground: '#f9fafb',
+          colorInputText: '#1f2937',
+        },
+      }}
+    >
       <html lang="en">
         <body className={inter.className}>
           <div className="min-h-screen flex flex-col">
