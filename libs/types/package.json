@@ -10,7 +10,7 @@
     "dev": "tsup --config tsup.config.ts --watch"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
+    "@types/node": "^25.0.3",
     "@types/react": "^19.2.7",
     "@typescript-eslint/eslint-plugin": "^8.51.0",
     "@typescript-eslint/parser": "^8.51.0",
