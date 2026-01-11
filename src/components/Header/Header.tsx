@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import MaterialIcon from "@/components/UI/MaterialIcon";
+import Nav from "@/components/Header/Nav";
+import Button from "@/components/UI/Button";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,40 +24,18 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-10">
-          <Link
-            href="/portfolio"
-            className="text-sm font-medium hover:text-primary transition-colors"
-          >
-            Portfolio
-          </Link>
-          <Link
-            href="/shop"
-            className="text-sm font-medium hover:text-primary transition-colors"
-          >
-            Shop
-          </Link>
-          <Link
-            href="/about"
-            className="text-sm font-medium hover:text-primary transition-colors"
-          >
-            About
-          </Link>
-          <Link
-            href="/contact"
-            className="text-sm font-medium hover:text-primary transition-colors"
-          >
-            Contact
-          </Link>
-        </div>
+        <Nav
+          mobileMenuOpen={mobileMenuOpen}
+          setMobileMenuOpen={setMobileMenuOpen}
+          isSignedIn={isSignedIn}
+        />
 
         <div className="flex items-center gap-4">
           {!isSignedIn ? (
             <Link href="/contact">
-              <button className="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-sm">
+              <Button variant="primary" size="md">
                 Get a Quote
-              </button>
+              </Button>
             </Link>
           ) : (
             <Link href="/dashboard" className="hidden md:block">
@@ -74,59 +54,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-
-      {/* Mobile Navigation */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-background-light dark:bg-background-dark py-4 px-6 border-t border-stone-200 dark:border-stone-800">
-          <nav className="flex flex-col gap-4">
-            <Link
-              href="/portfolio"
-              className="text-sm font-medium hover:text-primary transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Portfolio
-            </Link>
-            <Link
-              href="/shop"
-              className="text-sm font-medium hover:text-primary transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Shop
-            </Link>
-            <Link
-              href="/about"
-              className="text-sm font-medium hover:text-primary transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              href="/contact"
-              className="text-sm font-medium hover:text-primary transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Contact
-            </Link>
-            {!isSignedIn ? (
-              <Link
-                href="/contact"
-                className="text-sm font-medium hover:text-primary transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Get a Quote
-              </Link>
-            ) : (
-              <Link
-                href="/dashboard"
-                className="text-sm font-medium hover:text-primary transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Dashboard
-              </Link>
-            )}
-          </nav>
-        </div>
-      )}
     </nav>
   );
 }

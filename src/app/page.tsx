@@ -1,6 +1,7 @@
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import MaterialIcon from "@/components/UI/MaterialIcon";
+import Button from "@/components/UI/Button";
 
 export default function HomePage() {
   return (
@@ -32,12 +33,20 @@ export default function HomePage() {
                 in our mountain workshop.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-xl">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  className="px-8 py-4 text-lg"
+                >
                   View Portfolio
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-background-dark transition-all">
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-background-dark"
+                >
                   Our Story
-                </button>
+                </Button>
               </div>
             </div>
           </div>

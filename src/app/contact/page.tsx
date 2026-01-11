@@ -1,4 +1,5 @@
 import Header from "@/components/Header/Header";
+import ContactForm from "@/components/Contact/ContactForm";
 import MaterialIcon from "@/components/UI/MaterialIcon";
 
 export default function ContactPage() {
@@ -27,71 +28,7 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold text-[#1b140d] dark:text-white mb-2">
                 Start Your Commission
               </h2>
-              <form className="flex flex-col gap-5">
-                <div className="flex flex-wrap gap-4">
-                  <label className="flex flex-col flex-1 min-w-[240px]">
-                    <p className="text-sm font-semibold pb-2">Full Name</p>
-                    <input
-                      className="w-full rounded-lg border border-[#e7dbcf] dark:border-[#4a3a2a] bg-background-light dark:bg-[#1a130d] h-12 px-4 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
-                      placeholder="John Doe"
-                      type="text"
-                    />
-                  </label>
-                  <label className="flex flex-col flex-1 min-w-[240px]">
-                    <p className="text-sm font-semibold pb-2">Email Address</p>
-                    <input
-                      className="w-full rounded-lg border border-[#e7dbcf] dark:border-[#4a3a2a] bg-background-light dark:bg-[#1a130d] h-12 px-4 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
-                      placeholder="john@example.com"
-                      type="email"
-                    />
-                  </label>
-                </div>
-                <label className="flex flex-col w-full">
-                  <p className="text-sm font-semibold pb-2">
-                    Custom Request Type
-                  </p>
-                  <select className="w-full rounded-lg border border-[#e7dbcf] dark:border-[#4a3a2a] bg-background-light dark:bg-[#1a130d] h-12 px-4 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all appearance-none">
-                    <option value="">Select a category</option>
-                    <option value="furniture">Bespoke Furniture</option>
-                    <option value="leather">Handcrafted Leather Goods</option>
-                    <option value="restoration">Vintage Restoration</option>
-                    <option value="other">Other Unique Project</option>
-                  </select>
-                </label>
-                <label className="flex flex-col w-full">
-                  <p className="text-sm font-semibold pb-2">Project Vision</p>
-                  <textarea
-                    className="w-full rounded-lg border border-[#e7dbcf] dark:border-[#4a3a2a] bg-background-light dark:bg-[#1a130d] p-4 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-none"
-                    placeholder="Describe your dream piece..."
-                    rows={4}
-                  ></textarea>
-                </label>
-                <div className="flex flex-col w-full">
-                  <p className="text-sm font-semibold pb-2">Reference Images</p>
-                  <div className="border-2 border-dashed border-[#e7dbcf] dark:border-[#4a3a2a] rounded-xl p-8 flex flex-col items-center justify-center bg-background-light/50 dark:bg-[#1a130d]/50 hover:bg-background-light dark:hover:bg-[#1a130d] transition-colors cursor-pointer group">
-                    <MaterialIcon
-                      icon="cloud_upload"
-                      className="text-4xl text-[#9a734c] group-hover:text-primary transition-colors mb-2"
-                    />
-                    <p className="text-sm text-[#9a734c] font-medium">
-                      Drag and drop or{" "}
-                      <span className="text-primary underline">
-                        browse files
-                      </span>
-                    </p>
-                    <p className="text-xs text-[#9a734c]/70 mt-1">
-                      JPG, PNG up to 10MB
-                    </p>
-                  </div>
-                </div>
-                <button
-                  className="w-full bg-primary text-white font-bold py-4 rounded-lg hover:bg-opacity-90 shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2"
-                  type="submit"
-                >
-                  Send Inquiry
-                  <MaterialIcon icon="send" className="text-sm" />
-                </button>
-              </form>
+              <ContactForm />
             </div>
 
             {/* Right Column: Info & Map */}

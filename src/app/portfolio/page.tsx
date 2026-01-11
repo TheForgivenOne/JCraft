@@ -1,6 +1,9 @@
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import MaterialIcon from "@/components/UI/MaterialIcon";
+import Button from "@/components/UI/Button";
+import Chip from "@/components/UI/Chip";
+import Checkbox from "@/components/UI/Checkbox";
 
 export default function PortfolioPage() {
   return (
@@ -33,9 +36,13 @@ export default function PortfolioPage() {
             </p>
           </div>
           <div className="flex gap-2">
-            <button className="px-4 py-2 rounded-lg bg-[#f3ede7] dark:bg-[#3d2e21] text-sm font-semibold flex items-center gap-2">
+            <Button
+              variant="secondary"
+              size="md"
+              className="px-4 py-2 text-sm flex items-center gap-2"
+            >
               <MaterialIcon icon="sort" className="text-lg" /> Sort by: Latest
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -93,49 +100,35 @@ export default function PortfolioPage() {
                   Materials
                 </h3>
                 <div className="flex flex-col gap-1">
-                  <label className="flex items-center gap-3 px-3 py-2 cursor-pointer group">
-                    <input
-                      defaultChecked={true}
-                      className="rounded border-[#9a734c] text-primary focus:ring-primary"
-                      type="checkbox"
-                    />
-                    <span className="text-sm group-hover:text-primary transition-colors">
-                      Reclaimed Oak
-                    </span>
-                  </label>
-                  <label className="flex items-center gap-3 px-3 py-2 cursor-pointer group">
-                    <input
-                      className="rounded border-[#9a734c] text-primary focus:ring-primary"
-                      type="checkbox"
-                    />
-                    <span className="text-sm group-hover:text-primary transition-colors">
-                      Wrought Iron
-                    </span>
-                  </label>
-                  <label className="flex items-center gap-3 px-3 py-2 cursor-pointer group">
-                    <input
-                      className="rounded border-[#9a734c] text-primary focus:ring-primary"
-                      type="checkbox"
-                    />
-                    <span className="text-sm group-hover:text-primary transition-colors">
-                      Aged Brass
-                    </span>
-                  </label>
-                  <label className="flex items-center gap-3 px-3 py-2 cursor-pointer group">
-                    <input
-                      className="rounded border-[#9a734c] text-primary focus:ring-primary"
-                      type="checkbox"
-                    />
-                    <span className="text-sm group-hover:text-primary transition-colors">
-                      Full-Grain Leather
-                    </span>
-                  </label>
+                  <Checkbox
+                    label="Reclaimed Oak"
+                    checked={true}
+                    onChange={() => {}}
+                  />
+                  <Checkbox
+                    label="Wrought Iron"
+                    checked={false}
+                    onChange={() => {}}
+                  />
+                  <Checkbox
+                    label="Aged Brass"
+                    checked={false}
+                    onChange={() => {}}
+                  />
+                  <Checkbox
+                    label="Full-Grain Leather"
+                    checked={false}
+                    onChange={() => {}}
+                  />
                 </div>
               </div>
 
-              <button className="mt-4 w-full py-3 bg-primary text-white text-sm font-bold rounded-lg hover:bg-primary/90 shadow-lg shadow-primary/25 active:scale-95 transition-all">
+              <Button
+                variant="primary"
+                className="w-full mt-4 py-3 text-sm font-bold"
+              >
                 Clear All Filters
-              </button>
+              </Button>
             </div>
           </aside>
 
@@ -143,18 +136,12 @@ export default function PortfolioPage() {
           <div className="flex-1">
             {/* Active Filter Chips */}
             <div className="flex flex-wrap gap-2 mb-8">
-              <div className="flex items-center gap-2 bg-[#f3ede7] dark:bg-[#3d2e21] px-3 py-1.5 rounded-full text-xs font-bold">
+              <Chip variant="filter" onRemove={() => {}}>
                 RECLAIMED OAK
-                <button className="hover:text-primary transition-colors">
-                  <MaterialIcon icon="close" className="text-sm" />
-                </button>
-              </div>
-              <div className="flex items-center gap-2 bg-[#f3ede7] dark:bg-[#3d2e21] px-3 py-1.5 rounded-full text-xs font-bold">
+              </Chip>
+              <Chip variant="filter" onRemove={() => {}}>
                 FURNITURE
-                <button className="hover:text-primary transition-colors">
-                  <MaterialIcon icon="close" className="text-sm" />
-                </button>
-              </div>
+              </Chip>
             </div>
 
             {/* Products Grid */}
@@ -168,9 +155,12 @@ export default function PortfolioPage() {
                     alt="Handcrafted oak dining table detailed view"
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <button className="bg-white text-[#1b140d] px-6 py-3 rounded-lg font-bold shadow-xl hover:bg-primary hover:text-white transition-colors">
+                    <Button
+                      variant="primary"
+                      className="bg-white text-[#1b140d] px-6 py-3 font-bold shadow-xl hover:bg-primary hover:text-white"
+                    >
                       View Details
-                    </button>
+                    </Button>
                   </div>
                 </div>
                 <div className="p-6">
@@ -196,9 +186,12 @@ export default function PortfolioPage() {
                     alt="Minimalist forged iron wall sconce lighting"
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <button className="bg-white text-[#1b140d] px-6 py-3 rounded-lg font-bold shadow-xl hover:bg-primary hover:text-white transition-colors">
+                    <Button
+                      variant="primary"
+                      className="bg-white text-[#1b140d] px-6 py-3 font-bold shadow-xl hover:bg-primary hover:text-white"
+                    >
                       View Details
-                    </button>
+                    </Button>
                   </div>
                 </div>
                 <div className="p-6">
@@ -224,9 +217,12 @@ export default function PortfolioPage() {
                     alt="Stitched leather artisan satchel bag"
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <button className="bg-white text-[#1b140d] px-6 py-3 rounded-lg font-bold shadow-xl hover:bg-primary hover:text-white transition-colors">
+                    <Button
+                      variant="primary"
+                      className="bg-white text-[#1b140d] px-6 py-3 font-bold shadow-xl hover:bg-primary hover:text-white"
+                    >
                       View Details
-                    </button>
+                    </Button>
                   </div>
                 </div>
                 <div className="p-6">
@@ -252,9 +248,12 @@ export default function PortfolioPage() {
                     alt="Brushed brass tabletop minimalist clock"
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <button className="bg-white text-[#1b140d] px-6 py-3 rounded-lg font-bold shadow-xl hover:bg-primary hover:text-white transition-colors">
+                    <Button
+                      variant="primary"
+                      className="bg-white text-[#1b140d] px-6 py-3 font-bold shadow-xl hover:bg-primary hover:text-white"
+                    >
                       View Details
-                    </button>
+                    </Button>
                   </div>
                 </div>
                 <div className="p-6">
@@ -280,9 +279,12 @@ export default function PortfolioPage() {
                     alt="Sculptural wooden lounge chair design"
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <button className="bg-white text-[#1b140d] px-6 py-3 rounded-lg font-bold shadow-xl hover:bg-primary hover:text-white transition-colors">
+                    <Button
+                      variant="primary"
+                      className="bg-white text-[#1b140d] px-6 py-3 font-bold shadow-xl hover:bg-primary hover:text-white"
+                    >
                       View Details
-                    </button>
+                    </Button>
                   </div>
                 </div>
                 <div className="p-6">
@@ -308,9 +310,12 @@ export default function PortfolioPage() {
                     alt="Traditional handmade chisels on wood workbench"
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <button className="bg-white text-[#1b140d] px-6 py-3 rounded-lg font-bold shadow-xl hover:bg-primary hover:text-white transition-colors">
+                    <Button
+                      variant="primary"
+                      className="bg-white text-[#1b140d] px-6 py-3 font-bold shadow-xl hover:bg-primary hover:text-white"
+                    >
                       View Details
-                    </button>
+                    </Button>
                   </div>
                 </div>
                 <div className="p-6">

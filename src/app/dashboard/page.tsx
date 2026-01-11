@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MaterialIcon from "@/components/UI/MaterialIcon";
+import Button from "@/components/UI/Button";
 
 export default function DashboardPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -97,9 +98,9 @@ export default function DashboardPage() {
             </div>
           </label>
           <Link href="/contact">
-            <button className="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold tracking-[0.015em] hover:bg-opacity-90 transition-all">
+            <Button variant="primary" size="md" className="min-w-[84px]">
               <span>New Commission</span>
-            </button>
+            </Button>
           </Link>
           <div
             className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20"
@@ -170,9 +171,9 @@ export default function DashboardPage() {
                 Your custom Walnut Desk is nearing completion.
               </p>
             </div>
-            <button className="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-[#f3ede7] dark:bg-[#3d2e1f] text-[#1b140d] dark:text-white text-sm font-bold hover:bg-[#e8decb] transition-colors">
+            <Button variant="secondary" size="md" className="min-w-[84px]">
               <span>View All Projects</span>
-            </button>
+            </Button>
           </div>
 
           {/* Active Commissions */}
@@ -228,14 +229,22 @@ export default function DashboardPage() {
                     </div>
                   </div>
                   <div className="flex flex-wrap gap-3 pt-4 border-t border-[#f3ede7] dark:border-[#3d2e1f]">
-                    <button className="flex-1 min-w-[140px] flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-opacity-90 transition-all">
+                    <Button
+                      variant="primary"
+                      size="md"
+                      className="flex-1 min-w-[140px]"
+                    >
                       <MaterialIcon icon="visibility" className="text-lg" />
                       <span>Full Details</span>
-                    </button>
-                    <button className="flex-1 min-w-[140px] flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-white dark:bg-transparent border border-[#e5e7eb] dark:border-[#3d2e1f] text-[#1b140d] dark:text-white text-sm font-bold hover:bg-background-light dark:hover:bg-[#3d2e1f] transition-all">
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="md"
+                      className="flex-1 min-w-[140px]"
+                    >
                       <MaterialIcon icon="image" className="text-lg" />
                       <span>Progress Photos</span>
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -288,9 +297,9 @@ export default function DashboardPage() {
                       placeholder="Type your reply..."
                       type="text"
                     />
-                    <button className="text-primary p-1 hover:bg-primary/10 rounded-full transition-colors">
+                    <Button variant="icon" size="sm" className="p-1">
                       <MaterialIcon icon="send" />
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -327,9 +336,13 @@ export default function DashboardPage() {
                         Ordered Mar 12, 2023
                       </p>
                     </div>
-                    <button className="p-2 text-[#9a734c] hover:text-primary transition-colors">
+                    <Button
+                      variant="icon"
+                      size="md"
+                      className="p-2 text-[#9a734c] hover:text-primary"
+                    >
                       <MaterialIcon icon="download" />
-                    </button>
+                    </Button>
                   </div>
                   <div className="p-4 flex items-center gap-4 hover:bg-background-light dark:hover:bg-[#3d2e1f]/50 transition-colors">
                     <div
@@ -347,9 +360,13 @@ export default function DashboardPage() {
                         Ordered Nov 05, 2022
                       </p>
                     </div>
-                    <button className="p-2 text-[#9a734c] hover:text-primary transition-colors">
+                    <Button
+                      variant="icon"
+                      size="md"
+                      className="p-2 text-[#9a734c] hover:text-primary"
+                    >
                       <MaterialIcon icon="download" />
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </div>

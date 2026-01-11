@@ -1,0 +1,6 @@
+{
+  "ignoreDependencies": ["react-icons"],
+  "ignore": ["src/app/globals.css"],
+  "entry": ["src/app/**/*", "src/pages/**/*"],
+  "project": ["src/**/*"]
+}
