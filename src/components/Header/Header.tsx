@@ -2,70 +2,91 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { SignInButton, UserButton, useUser } from '@clerk/nextjs';
 
 export default function Header() {
-  const { isSignedIn } = useUser();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // Mock authentication state since we're not using Clerk anymore
+  const isSignedIn = false;
 
   return (
-    <header className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold text-gray-800">
-          JCraft
-        </Link>
+    <nav className="sticky top-0 z-50 w-full border-b border-stone-200 dark:border-stone-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <span className="material-symbols-outlined text-primary text-3xl">carpenter</span>
+          <Link href="/" className="text-xl font-bold tracking-tight text-deep-oak dark:text-stone-100">
+            JCraft
+          </Link>
+        </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          <Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link>
-          <Link href="/portfolio" className="text-gray-600 hover:text-gray-900">Portfolio</Link>
-          <Link href="/about" className="text-gray-600 hover:text-gray-900">About</Link>
-          <Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-        </nav>
+        <div className="hidden md:flex items-center gap-10">
+          <Link href="/portfolio" className="text-sm font-medium hover:text-primary transition-colors">
+            Portfolio
+          </Link>
+          <Link href="/shop" className="text-sm font-medium hover:text-primary transition-colors">
+            Shop
+          </Link>
+          <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">
+            About
+          </Link>
+          <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors">
+            Contact
+          </Link>
+        </div>
 
-        {/* Auth and User Menu */}
-        <div className="flex items-center space-x-4">
-          {isSignedIn ? (
-            <>
-              <Link href="/dashboard" className="text-gray-600 hover:text-gray-900 hidden md:block">
-                Dashboard
-              </Link>
-              <UserButton />
-            </>
-          ) : (
-            <SignInButton mode="modal">
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
-                Sign In
+        <div className="flex items-center gap-4">
+          {!isSignedIn ? (
+            <Link href="/contact">
+              <button className="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-sm">
+                Get a Quote
               </button>
-            </SignInButton>
+            </Link>
+          ) : (
+            <Link href="/dashboard" className="hidden md:block">
+              <div className="size-10 rounded-full bg-gray-200 border-2 border-primary/20 flex items-center justify-center">
+                <span className="text-primary font-bold">A</span>
+              </div>
+            </Link>
           )}
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-gray-600"
+            className="md:hidden text-deep-oak dark:text-stone-100"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+            <span className="material-symbols-outlined">menu</span>
           </button>
         </div>
       </div>
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white py-4 px-4 border-t">
-          <nav className="flex flex-col space-y-3">
-            <Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link>
-            <Link href="/portfolio" className="text-gray-600 hover:text-gray-900">Portfolio</Link>
-            <Link href="/about" className="text-gray-600 hover:text-gray-900">About</Link>
-            <Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-            {isSignedIn && (
-              <Link href="/dashboard" className="text-gray-600 hover:text-gray-900">Dashboard</Link>
+        <div className="md:hidden bg-background-light dark:bg-background-dark py-4 px-6 border-t border-stone-200 dark:border-stone-800">
+          <nav className="flex flex-col gap-4">
+            <Link href="/portfolio" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+              Portfolio
+            </Link>
+            <Link href="/shop" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+              Shop
+            </Link>
+            <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+              About
+            </Link>
+            <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+              Contact
+            </Link>
+            {!isSignedIn ? (
+              <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Get a Quote
+              </Link>
+            ) : (
+              <Link href="/dashboard" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Dashboard
+              </Link>
             )}
           </nav>
         </div>
       )}
-    </header>
+    </nav>
   );
 }

@@ -1,31 +1,103 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-lg font-semibold mb-4">JCraft</h3>
-            <p className="text-gray-300">
-              Premium craftsmanship and custom creations tailored to your needs.
-            </p>
+    <footer className="bg-deep-oak text-stone-300 py-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="space-y-6">
+          <div className="flex items-center gap-2 text-white">
+            <span className="material-symbols-outlined text-primary text-3xl">carpenter</span>
+            <span className="text-2xl font-bold tracking-tight">JCraft</span>
           </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="/" className="text-gray-300 hover:text-white">Home</a></li>
-              <li><a href="/portfolio" className="text-gray-300 hover:text-white">Portfolio</a></li>
-              <li><a href="/about" className="text-gray-300 hover:text-white">About</a></li>
-              <li><a href="/contact" className="text-gray-300 hover:text-white">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-            <p className="text-gray-300">Email: info@jcraft.example</p>
-            <p className="text-gray-300">Phone: (123) 456-7890</p>
+          <p className="text-sm leading-relaxed">
+            Artisanal excellence from the heart of the mountains. Crafting generations of memories through wood.
+          </p>
+          <div className="flex gap-4">
+            <a className="hover:text-primary transition-colors" href="#">
+              <span className="material-symbols-outlined">public</span>
+            </a>
+            <a className="hover:text-primary transition-colors" href="#">
+              <span className="material-symbols-outlined">camera</span>
+            </a>
+            <a className="hover:text-primary transition-colors" href="#">
+              <span className="material-symbols-outlined">mail</span>
+            </a>
           </div>
         </div>
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} JCraft. All rights reserved.</p>
+        <div>
+          <h4 className="text-white font-bold mb-6">Navigation</h4>
+          <ul className="space-y-4 text-sm">
+            <li>
+              <Link href="/" className="hover:text-primary">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/portfolio" className="hover:text-primary">
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="hover:text-primary">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-primary">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="text-white font-bold mb-6">Support</h4>
+          <ul className="space-y-4 text-sm">
+            <li>
+              <Link href="#" className="hover:text-primary">
+                Care Guide
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-primary">
+                Shipping Policy
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-primary">
+                Warranty
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-primary">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="space-y-6">
+          <h4 className="text-white font-bold mb-2">Join Our Newsletter</h4>
+          <p className="text-xs">Get a peek behind the workshop doors.</p>
+          <div className="flex">
+            <input
+              className="bg-stone-800 border-none rounded-l-lg px-4 py-3 text-sm focus:ring-1 focus:ring-primary w-full"
+              placeholder="Email address"
+              type="email"
+            />
+            <button className="bg-primary text-white px-4 rounded-r-lg hover:bg-primary/90 transition-colors">
+              <span className="material-symbols-outlined">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 mt-20 pt-8 border-t border-stone-800 text-xs flex flex-col md:flex-row justify-between gap-4">
+        <p>© 2024 JCraft Artisanal Furniture. All rights reserved.</p>
+        <div className="flex gap-6">
+          <Link href="#" className="hover:text-white">
+            Privacy Policy
+          </Link>
+          <Link href="#" className="hover:text-white">
+            Terms of Service
+          </Link>
         </div>
       </div>
     </footer>

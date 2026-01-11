@@ -1,22 +1,22 @@
 # JCraft - Premium Craftsmanship Website
 
-JCraft is a personal business website for a skilled craftsman, designed to showcase exceptional craftsmanship and custom creations. The site features a portfolio of work, contact capabilities, and user authentication. In the future, it may expand to become a marketplace for multiple craftsmen.
+JCraft is a personal business website for a skilled craftsman, designed to showcase exceptional craftsmanship and custom creations. The site features a portfolio of work, contact capabilities, and user dashboard. The design implements the HTML mockups provided with a focus on responsive design and dark mode support.
 
 ## Features
 
 - **Portfolio Showcase**: Display crafted items with images and descriptions
 - **Contact Form**: Allow customers to reach out for custom orders
-- **Authentication**: Secure user accounts with Clerk
-- **Database Integration**: Store portfolio items and user data with Convex
 - **Responsive Design**: Works on all device sizes
+- **Dark Mode Support**: Automatic dark/light mode based on system preference
 - **Dashboard**: User management interface
+- **Modern UI**: Clean, accessible interface with semantic HTML
 
 ## Tech Stack
 
 - **Framework**: Next.js 16 (App Router)
 - **Styling**: Tailwind CSS
-- **Authentication**: Clerk
-- **Database**: Convex
+- **Icons**: Material Symbols
+- **Fonts**: Work Sans
 - **Deployment**: Vercel (recommended)
 
 ## Getting Started
@@ -41,36 +41,14 @@ JCraft is a personal business website for a skilled craftsman, designed to showc
    yarn install
    ```
 
-3. Set up environment variables:
-   ```bash
-   cp .env.local.example .env.local
-   ```
-   
-   Then add your Clerk and Convex credentials:
-   - `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
-   - `CLERK_SECRET_KEY`
-   - `CONVEX_DEPLOYMENT_URL`
-   - `CONVEX_PRIVATE_KEY`
-
-4. Run the development server:
+3. Run the development server:
    ```bash
    npm run dev
    # or
    yarn dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Environment Variables
-
-You'll need to create a `.env.local` file with the following variables:
-
-```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_...
-CLERK_SECRET_KEY=sk_...
-CONVEX_DEPLOYMENT_URL=https://your-convex-app.convex.cloud
-CONVEX_PRIVATE_KEY=your_convex_private_key
-```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Project Structure
 
@@ -82,12 +60,10 @@ src/
 │   ├── Footer/
 │   ├── Portfolio/
 │   ├── Contact/
-│   ├── Auth/
 │   └── UI/
 ├── lib/                    # Utility functions
 ├── types/                  # Type definitions
-├── hooks/                  # Custom React hooks
-└── convex/                 # Convex database schema and queries
+└── hooks/                  # Custom React hooks
 ```
 
 ## Development
@@ -96,10 +72,10 @@ This project follows a modular, expandable, and dynamic structure with simple, r
 
 ## Future Plans
 
-- Expand to a marketplace supporting multiple craftsmen
 - Add e-commerce capabilities
 - Implement advanced filtering and search
 - Add customer reviews and ratings
+- Enhance dashboard functionality
 
 ## Contributing
 

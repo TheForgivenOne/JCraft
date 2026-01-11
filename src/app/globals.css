@@ -1,9 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
 @import "tailwindcss";
+@source "../components/**/*.{js,ts,jsx,tsx}";
+@source "../lib/**/*.{js,ts,jsx,tsx}";
+@source "../hooks/**/*.{js,ts,jsx,tsx}";
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 27, 20, 13;
+  --background-light-rgb: 255, 255, 255;
+  --background-dark-rgb: 45, 33, 22;
+  --primary-rgb: 236, 127, 19;
+  --secondary-rgb: 243, 237, 231;
+  --accent-rgb: 154, 115, 76;
+  --border-light-rgb: 229, 231, 235;
+  --border-dark-rgb: 61, 46, 31;
+  --card-light-rgb: 255, 255, 255;
+  --card-dark-rgb: 45, 33, 22;
+  --success-rgb: 34, 197, 94;
+  --error-rgb: 239, 68, 68;
+  --warning-rgb: 245, 158, 11;
+  --info-rgb: 59, 130, 246;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-light-rgb: 45, 33, 22;
+    --background-dark-rgb: 45, 33, 22;
+    --primary-rgb: 236, 127, 19;
+    --secondary-rgb: 61, 46, 31;
+    --accent-rgb: 209, 194, 181;
+    --border-light-rgb: 61, 46, 31;
+    --border-dark-rgb: 61, 46, 31;
+    --card-light-rgb: 45, 33, 22;
+    --card-dark-rgb: 45, 33, 22;
+  }
 }
 
 body {
@@ -11,12 +43,36 @@ body {
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--background-light-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-light-rgb));
 }
 
 @layer utilities {
+  .font-display {
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wood-texture-overlay {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBlmrb6iTDg4kY8gxnpu7oYbsE1MZA6PTqNa35_k7MMqAbMJrytxX0u_LGg6kFi_7BY8S6qXfxAPlYeeuR8UU_T9l8tVlHlbl2k5-4jeJXWrZzKOWs-E5yCFGT3jnS2F7Wlh9Kwq_OQrAG9OmTIl4kZcZkhLGmXm1uIWMF3-xXC6fPBoWSVFQ4bY_YWHvJkSLQRmy9wR6SFeAcaE4C7GnrYO04QL7NyTdIqQKJldQAXzB5OTjJZj9xHEpzopJm8h-PDLpIV7YWQha41);
+  }
+
   .text-balance {
     text-wrap: balance;
   }

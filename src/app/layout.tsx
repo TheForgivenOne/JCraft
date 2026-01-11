@@ -1,9 +1,11 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { ClerkProvider } from '@clerk/nextjs';
+import { Work_Sans } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const workSans = Work_Sans({
+  subsets: ['latin'],
+  variable: '--font-work-sans',
+});
 
 export const metadata: Metadata = {
   title: 'JCraft - Premium Craftsmanship',
@@ -16,10 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    </ClerkProvider>
+    <html lang="en" className={`${workSans.variable}`}>
+      <body className={`${workSans.variable} font-display bg-background-light dark:bg-background-dark text-foreground`}>{children}</body>
+    </html>
   );
 }

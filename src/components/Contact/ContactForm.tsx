@@ -1,8 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { useMutation } from 'convex/react';
-import { api } from '../../../convex/_generated/api';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -15,8 +13,6 @@ export default function ContactForm() {
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState('');
 
-  const createContactMessage = useMutation(api.contact.create);
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -28,14 +24,21 @@ export default function ContactForm() {
     setSubmitError('');
 
     try {
-      await createContactMessage({
-        name: formData.name,
-        email: formData.email,
-        message: formData.message
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
 
-      setSubmitSuccess(true);
-      setFormData({ name: '', email: '', message: '' });
+      if (response.ok) {
+        setSubmitSuccess(true);
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        const data = await response.json();
+        setSubmitError(data.message || 'Failed to send message. Please try again.');
+      }
     } catch (error) {
       setSubmitError('Failed to send message. Please try again.');
       console.error('Error submitting form:', error);
