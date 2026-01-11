@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import MaterialIcon from '@/components/UI/MaterialIcon';
+import Link from "next/link";
+import MaterialIcon from "@/components/UI/MaterialIcon";
 
 export default function Footer() {
   return (
@@ -11,7 +11,8 @@ export default function Footer() {
             <span className="text-2xl font-bold tracking-tight">JCraft</span>
           </div>
           <p className="text-sm leading-relaxed">
-            Artisanal excellence from the heart of the mountains. Crafting generations of memories through wood.
+            Artisanal excellence from the heart of the mountains. Crafting
+            generations of memories through wood.
           </p>
           <div className="flex gap-4">
             <a className="hover:text-primary transition-colors" href="#">

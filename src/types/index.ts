@@ -4,7 +4,7 @@ export interface User {
   id: string;
   name: string;
   email: string;
-  role: 'admin' | 'artisan' | 'customer';
+  role: "admin" | "artisan" | "customer";
   createdAt: string;
   updatedAt: string;
 }
@@ -26,7 +26,7 @@ export interface ContactMessage {
   name: string;
   email: string;
   message: string;
-  status: 'new' | 'in-progress' | 'resolved';
+  status: "new" | "in-progress" | "resolved";
   createdAt: string;
   updatedAt: string;
 }

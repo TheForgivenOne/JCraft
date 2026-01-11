@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import MaterialIcon from '@/components/UI/MaterialIcon';
+import { useState } from "react";
+import Link from "next/link";
+import MaterialIcon from "@/components/UI/MaterialIcon";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,23 +14,38 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <MaterialIcon icon="carpenter" className="text-primary text-3xl" />
-          <Link href="/" className="text-xl font-bold tracking-tight text-deep-oak dark:text-stone-100">
+          <Link
+            href="/"
+            className="text-xl font-bold tracking-tight text-deep-oak dark:text-stone-100"
+          >
             JCraft
           </Link>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-10">
-          <Link href="/portfolio" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            href="/portfolio"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             Portfolio
           </Link>
-          <Link href="/shop" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            href="/shop"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             Shop
           </Link>
-          <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            href="/about"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             About
           </Link>
-          <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link
+            href="/contact"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             Contact
           </Link>
         </div>
@@ -64,24 +79,48 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-background-light dark:bg-background-dark py-4 px-6 border-t border-stone-200 dark:border-stone-800">
           <nav className="flex flex-col gap-4">
-            <Link href="/portfolio" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <Link
+              href="/portfolio"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               Portfolio
             </Link>
-            <Link href="/shop" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <Link
+              href="/shop"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               Shop
             </Link>
-            <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <Link
+              href="/about"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               About
             </Link>
-            <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <Link
+              href="/contact"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               Contact
             </Link>
             {!isSignedIn ? (
-              <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+              <Link
+                href="/contact"
+                className="text-sm font-medium hover:text-primary transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Get a Quote
               </Link>
             ) : (
-              <Link href="/dashboard" className="text-sm font-medium hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+              <Link
+                href="/dashboard"
+                className="text-sm font-medium hover:text-primary transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Dashboard
               </Link>
             )}

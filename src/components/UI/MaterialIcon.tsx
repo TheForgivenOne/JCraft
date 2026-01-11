@@ -1,41 +1,41 @@
-import React from 'react';
+import React from "react";
 
 interface MaterialIconProps {
   icon: string;
   className?: string;
   filled?: boolean;
-  size?: 'small' | 'normal' | 'large' | number;
+  size?: "small" | "normal" | "large" | number;
 }
 
-const MaterialIcon: React.FC<MaterialIconProps> = ({ 
-  icon, 
-  className = '', 
+const MaterialIcon: React.FC<MaterialIconProps> = ({
+  icon,
+  className = "",
   filled = false,
-  size = 'normal'
+  size = "normal",
 }) => {
   // Determine size classes
-  let sizeClass = '';
-  if (typeof size === 'string') {
+  let sizeClass = "";
+  if (typeof size === "string") {
     switch (size) {
-      case 'small':
-        sizeClass = 'text-base';
+      case "small":
+        sizeClass = "text-base";
         break;
-      case 'large':
-        sizeClass = 'text-2xl';
+      case "large":
+        sizeClass = "text-2xl";
         break;
       default:
-        sizeClass = 'text-lg'; // normal
+        sizeClass = "text-lg"; // normal
         break;
     }
   } else {
     // If size is a number, we'll handle it via inline style
-    sizeClass = '';
+    sizeClass = "";
   }
 
-  const iconSize = typeof size === 'number' ? { fontSize: `${size}px` } : {};
+  const iconSize = typeof size === "number" ? { fontSize: `${size}px` } : {};
 
   return (
-    <span 
+    <span
       className={`material-symbols-outlined ${sizeClass} ${className}`}
       style={iconSize}
     >

@@ -3,9 +3,11 @@ interface CardProps {
   className?: string;
 }
 
-export default function Card({ children, className = '' }: CardProps) {
+export default function Card({ children, className = "" }: CardProps) {
   return (
-    <div className={`bg-white rounded-lg shadow-md overflow-hidden ${className}`}>
+    <div
+      className={`bg-white rounded-lg shadow-md overflow-hidden ${className}`}
+    >
       {children}
     </div>
   );

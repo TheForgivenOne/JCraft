@@ -2,7 +2,7 @@
 export const apiCall = async (endpoint: string, options: RequestInit = {}) => {
   const response = await fetch(endpoint, {
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
       ...options.headers,
     },
     ...options,
