@@ -1,0 +1,50 @@
+{
+    "security": {
+      "auth": {
+        "selectedType": "qwen-oauth"
+      }
+    },
+    "$version": 2,
+    "ide": {
+      "hasSeenNudge": true,
+      "enabled": true
+    },
+    "ui": {
+      "theme": "Qwen Dark",
+      "footer": {
+        "hideModelInfo": false
+      },
+      "showMemoryUsage": true,
+      "showCitations": true
+    },
+    "mcpServers": {
+      "context7": {
+        "httpUrl": "https://mcp.context7.com/mcp",
+        "headers": {
+          "CONTEXT7_API_KEY": "ctx7sk-4250dbe1-3a19-4144-9ad4-08aa33a0be9e",
+          "Accept": "application/json, text/event-stream"
+        }
+      },
+      "sequential-thinking": {
+        "command": "npx",
+        "args": [
+          "@modelcontextprotocol/server-sequential-thinking"
+        ]
+      }
+    },
+    "general": {
+      "preferredEditor": "vim"
+    },
+    "output": {
+      "format": "json"
+    },
+    "tools": {
+      "shell": {
+        "showColor": false,
+        "enableInteractiveShell": true
+      },
+      "approvalMode": "default",
+      "autoAccept": false,
+      "useBuiltinRipgrep": true
+    }
+  }

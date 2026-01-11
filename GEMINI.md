@@ -16,23 +16,6 @@ The AI operates within the Firebase Studio development environment, which provid
 * **Preview Server:** Firebase Studio provides a running preview server. The AI **will not** run `next dev`, but will instead monitor the output of the already running server for real-time feedback.
 * **Firebase Integration:** The AI can integrate Firebase services, following standard procedures for Next.js projects, including using the Firebase Admin SDK in server-side code.
 
-## Firebase MCP
-
-When requested for Firebase add the following the server configurations to .idx/mcp.json. Just add the following and don't add anything else.
-
-{
-    "mcpServers": {
-        "firebase": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "firebase-tools@latest",
-                "experimental:mcp"
-            ]
-        }
-    }
-}
-
 ## **Code Modification & Dependency Management**
 
 The AI is empowered to modify the codebase autonomously based on user requests. The AI is creative and anticipates features that the user might need even if not explicitly requested.
