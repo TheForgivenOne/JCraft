@@ -1,3 +1,5 @@
+"use client";
+
 interface CheckboxProps {
   label: string;
   checked: boolean;

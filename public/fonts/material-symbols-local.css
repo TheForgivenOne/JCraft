@@ -1,0 +1,36 @@
+/*
+ * Material Symbols font files should be placed here.
+ * Due to licensing restrictions, these cannot be automatically downloaded.
+ * 
+ * To use Material Symbols locally:
+ * 1. Visit https://fonts.google.com/icons
+ * 2. Select the icons you need
+ * 3. Download the font files (usually in WOFF2 format)
+ * 4. Place them in this directory
+ * 5. Update the CSS below to reference the local files
+ */
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./MaterialSymbolsOutlined.woff2') format('woff2');
+  font-display: swap;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  -webkit-font-smoothing: antialiased;
+}

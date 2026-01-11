@@ -13,8 +13,7 @@ export default function AboutPage() {
             <div
               className="w-full lg:w-1/2 aspect-[4/5] bg-center bg-no-repeat bg-cover rounded-xl shadow-2xl"
               style={{
-                backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhuTgD5F9wYJLX5twrz4Y47JE_EcrTVPPSvOp0j6XiUxW1YDkmljXniUOZ3PFdf1FOZCOPj2NTi02pHDbJ5aCrEn408G_LBsg2-nzQ0l8-m0Prsu_1DrXagn9KwfVzwPxggvb8Fj7_xWbkuHDi1uh5EvN9GdqzduTxT8-qUuBBglqNkwECKHcPMD14jSyhG-IDcII1Hju-MtKzNr6Sx9mjKzEGUvqUBY_49fkL2gQO2BMNQO4976Bz8vVTWZNBgmpdh-5nNtlTFB88')",
+                backgroundImage: "url('/images/image_9.jpg')",
               }}
             ></div>
             <div className="flex flex-col gap-8 w-full lg:w-1/2">
@@ -285,8 +284,7 @@ export default function AboutPage() {
                 <div
                   className="hidden lg:block w-48 h-32 bg-center bg-cover rounded-lg"
                   style={{
-                    backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwut7MNwQPXL8h9Ys5G4-gb4yaAbBFbB4r9riwHCdm7N5EPErythXxXrmJKfVLs6ljpaZIQUwHRqnPr5MEUe9xAUimTwacysGFGah4ZiEIlXjMqQGKnHpTkHKQfvLwMHbB3vIm39wNLzRwcrBa_3P38_fYApAIsd4xdaeM_0oXnLmv0Qp5QyvFsmbMTbpkqM3csseyrSuq29g6r3BL0UxXgYMw9Wu5shPCd1Qw53KqoAog2FDMQktpVgaBUEiSpK1s2BysQs9CuUZt')",
+                    backgroundImage: "url('/images/image_10.jpg')",
                   }}
                 ></div>
               </div>

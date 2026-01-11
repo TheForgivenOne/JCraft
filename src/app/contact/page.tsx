@@ -37,7 +37,7 @@ export default function ContactPage() {
               <div className="w-full rounded-xl overflow-hidden border border-[#e7dbcf] dark:border-[#3a2d21] h-[300px] relative">
                 <img
                   className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCddokkmW26zJKMatCEXh_S8ZIzZ7iNCGsTlnvY3J3_QINs3Ih0rRybOFmJhFgI262KaepStj3SjUBmUugd3UyQKxZdtupH2_ez8OigsNIH3-NriD4skbXcUZw_LLDp7a8jwdPHeOWnKNTXSjERMozH0EIOm4P2JxzLlkeVE067QeQchIeVXilnI-3H0QnOkjqfjYU3_vP9x2rSLsTGsqYYwj1hxG579wOycF0zarjPMA5aUlM8uzcKDdxKenD_42GbEtuXkhX24shc"
+                  src="/images/image_12.jpg"
                   alt="A clean map showing the workshop location in a city"
                 />
                 <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>

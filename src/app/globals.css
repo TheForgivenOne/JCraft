@@ -1,5 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap");
+/*
+ * Local fonts - using system fonts fallback
+ */
+/* Work Sans fallback */
+.font-display {
+  font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Material Symbols using CDN as local font files require license compliance */
+/* This will be loaded via next/head in the layout or via a separate CSS file */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  -webkit-font-smoothing: antialiased;
+}
 
 @import "tailwindcss";
 @source "../components/**/*.{js,ts,jsx,tsx}";
@@ -70,7 +94,7 @@ body {
   }
 
   .wood-texture-overlay {
-    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBlmrb6iTDg4kY8gxnpu7oYbsE1MZA6PTqNa35_k7MMqAbMJrytxX0u_LGg6kFi_7BY8S6qXfxAPlYeeuR8UU_T9l8tVlHlbl2k5-4jeJXWrZzKOWs-E5yCFGT3jnS2F7Wlh9Kwq_OQrAG9OmTIl4kZcZkhLGmXm1uIWMF3-xXC6fPBoWSVFQ4bY_YWHvJkSLQRmy9wR6SFeAcaE4C7GnrYO04QL7NyTdIqQKJldQAXzB5OTjJZj9xHEpzopJm8h-PDLpIV7YWQha41);
+    background-image: url(/images/wood-texture.jpg);
   }
 
   .text-balance {

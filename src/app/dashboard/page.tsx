@@ -191,8 +191,7 @@ export default function DashboardPage() {
                 <div
                   className="w-full md:w-2/5 aspect-video md:aspect-auto min-h-[240px] bg-center bg-no-repeat bg-cover"
                   style={{
-                    backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDUp5D64H5PPKDEEVdN2sFKfmAZ7UQ9CPrjihkZHWmpd2CrAep-LRq8O--64lUbwS4b5A5AdynI5js0nirabXqIH2dqSYV9GggwL3ldR6dTRetw8FpTATce-29xQRPkxetNz5CNl1UWy3ORXEIbuDxlDSkyM_zmuGneatzZ7sxZm4yk0NUj3nBRr1XpDqFSeWZq6k6OQzwApDEttoTwjeDotEhoQ27DnslzwUn17266lFGLDwUwZcVIdWJTbriWtQuxgNok58A_2Ieq')",
+                    backgroundImage: "url('/images/image_13.jpg')",
                   }}
                 ></div>
                 <div className="flex-1 p-6 md:p-8 flex flex-col justify-between gap-6">
@@ -270,8 +269,7 @@ export default function DashboardPage() {
                   <div
                     className="size-12 rounded-full bg-center bg-cover flex-shrink-0 border-2 border-[#f3ede7] dark:border-[#3d2e1f]"
                     style={{
-                      backgroundImage:
-                        "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDniBzVqGH_e8o3DONz3X3rD_OnkvkFpitGRs8ePxZERMj5-Bdq-vNcSbWa_dmchuVSj4zRL2nyED6Ju913dKuIisAcR3R7s8xYrJirg-qkNeFC58xD0LOWbAeLbVMZD-3ojaCHTZ0VCGW1LO1BV3pI-QGX49Bfnn1DXaXOp4W2_3RcQie10t_nuHaXfhcN1eY-y13xnA6ruwl0vjx_f8_HlKp2A6sv5wXOwD8IM1w9MqQf4wIdxZJqTC_D8ZBsRV7SduGyIVNZJeeH')",
+                      backgroundImage: "url('/images/image_14.jpg')",
                     }}
                   ></div>
                   <div className="flex-1">
@@ -324,8 +322,7 @@ export default function DashboardPage() {
                     <div
                       className="size-14 rounded-lg bg-center bg-cover flex-shrink-0"
                       style={{
-                        backgroundImage:
-                          "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDnwtnvn7oSfWHwuFTTVMcpkkhJPK0ooWKVJgwdRrlzZdr50l609Bme0AGorWysj8KwTt1gTYNQ7HZ_olhb1Yzw_zxXfWn_YuofWWjv4_y3MSIG-serKxnNJe0FV2MudbWOeO0JFBXyV05d22Iz8WL7a2lVOCac2NSWLMOkTjpVfB70CFjFK236-SAXQd7lh0SSNdB35eKCLfpPxIk-7e9Zdw3wSxLD42PGc1dj0Af7kI_QUdVxEHyhxgBFOyCRYiMNVzc3dLYOVU8d')",
+                        backgroundImage: "url('/images/image_15.jpg')",
                       }}
                     ></div>
                     <div className="flex-1 min-w-0">
@@ -348,8 +345,7 @@ export default function DashboardPage() {
                     <div
                       className="size-14 rounded-lg bg-center bg-cover flex-shrink-0"
                       style={{
-                        backgroundImage:
-                          "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOycTK_8WZz_pYuflCDQxCvfZviCUKa-gQgqZbsf2nDVQs6MP2x-CFDIrz76DfuHnxX_zgIk3kfagYTD-451mqx1nMg7TfIEEnFsMa0fMnCACGx5Yze8MhW67nqeSnZnx-n9VUeFujGOYFrC5QU9Ouat5eiK-1yU82F0EmgYBMV3Xbc0TaADd0KEFXT1STHA6UhiXr7-9gU5l6w6edJG2e0ZuBQir58NvGhRzKdNbkmWkI8DwDmYE4YeVTYBhoRQ9L3Q_8zHSAadM8')",
+                        backgroundImage: "url('/images/image_16.jpg')",
                       }}
                     ></div>
                     <div className="flex-1 min-w-0">

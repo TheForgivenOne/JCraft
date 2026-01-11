@@ -1,0 +1,4 @@
+/* Local Work Sans Font - Using system fonts as fallback */
+.font-display {
+  font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif;
+}

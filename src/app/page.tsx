@@ -16,7 +16,7 @@ export default function HomePage() {
             <img
               alt="Premium Wood Texture"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNmFYx1WnfwM_p_CHssZWyDX7KzIdyLkrHw1ncyriS5LvX5pq48-WLlxLr1ogS0iROItC67ftxQKs0cJ5IhJAAnveVZ7DICYgmBkGYtJfR3lUr2erS3UX4dp_mtsJXFmGmchiMxSvh4zj8kD77C8e5VVGvGnIoaiQwAq0Tw1UoQnakoSL9pjA6gWxDS8k-mu_vCM8H5aZ3EvaTMlLWjERk9RUciH0eXAWGGWfvDrFOcdNG0XcgEqAEcJpkzQ5O9XYVnKjV_V4HB657"
+              src="/images/image_1.jpg"
             />
           </div>
           <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-10 w-full">
@@ -105,7 +105,7 @@ export default function HomePage() {
                   <img
                     alt="Oak Dining Table"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwLsqny4TAJ2-Mb_G5bg3F20sy6JCqftc7m1AWxlvD0FSZi5Ux5AleLR7odR3-Z9Ovletzk9NHl5RItsxrZw-GN16du8oFMpJgqomUSpC3I3_rFPo32ekQnQmRmT_P2FiasEaU3OVzbBewlIj5jqjiRzTw-tIv_wEn0ZLraCrUmdKvDgc2P7fNTgl2spbJLK4-zzs0nHRgPvir2aLks1awa8bo0Hn3VMXzzUv5XtjyBFIgx8_XE8NPkAafYvyuLPNvVQJlOBR0QjO6"
+                    src="/images/image_2.jpg"
                   />
                   <div className="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <button className="bg-white/90 text-background-dark px-6 py-3 rounded-lg font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -128,7 +128,7 @@ export default function HomePage() {
                   <img
                     alt="Walnut Credenza"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt9EvM01Pkt9AM8hMZsf5FbmDd5cFVGasvkcjctg5v4P82nLfMh2hoIW9VVgBJwdwnv0zxTBwwhEk9Btt4nhzdGU_scUDFQSN19p95KNAFP0lWvzwBollMSf3Rlup5jaFBBtajpHwNaY0sQjydBoDbCxXexZmgHYx8qhcdZMC-ZJYWZmvydvQCNg6K05L0fOks0vAbLtRqw5a_aNZdx73GDXQy46bbjsKO34Nnn4yzrEE8ijvAUA_KQGaE_59YcmxxHhjbcD6-93zj"
+                    src="/images/image_3.jpg"
                   />
                   <div className="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <button className="bg-white/90 text-background-dark px-6 py-3 rounded-lg font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -151,7 +151,7 @@ export default function HomePage() {
                   <img
                     alt="Mahogany Lounge Chair"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8CVO6V7ctlaHCJTZJPyfWlOIzBG0n9h7LjTcrvJWVUoO-KPZoIuSRX6knxjoOylT9iocHqGAdzEvgN-VO9h-drD7eZiLGKf_z0HA6kacVe6AREC3CKbXAK1_tXA-_CRau_TQejv3BXKHNU6E2xmr84pPWeYigxmZ1f04kJEfreMSfBRfsP2AubYJaUfC9G1I74GVQr86XwiVyLDc5z-VG0qFgLM6GlodpXpNY1ufTIVTNhIjBrvsMHmS8q36nwe2sLNOiDpCjBL7F"
+                    src="/images/image_4.jpg"
                   />
                   <div className="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <button className="bg-white/90 text-background-dark px-6 py-3 rounded-lg font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -181,7 +181,7 @@ export default function HomePage() {
                   <img
                     alt="Craftsman at Work"
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS3t_CCNcNyyFlE0d1Mwe9DW18WateQADAchu6KNI3Zm_anWFvAQb0Dbtu2-JOzBeEBs9P4tjT9L51Xa0iZqRmAlGEk9v69zjtfJjFyaAWkcfU3cpUr1_rPZ0MDPfGutfNoyl3X5HnPGdGoFl4APIbTSk_iR5e609APdjq6kA23a6uyXQ9WD4xu8B8yC_eR4LCjNlv1NpOyCIMxdr7BbZnPnDyBKgRuDt-OHrMrluZTOe53qwITPT2mx42mjPw4grUJYNu4G5kVQyr"
+                    src="/images/image_5.jpg"
                   />
                 </div>
                 <div className="absolute -bottom-8 -right-8 bg-primary p-8 rounded-2xl hidden md:block shadow-xl max-w-[240px]">
@@ -253,10 +253,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="size-12 rounded-full bg-stone-300 overflow-hidden">
-                    <img
-                      alt="Customer"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2oKkVkdZ0eqi3cXHa3nhvOPrkwOqkTCGsG4s8PQrdIGvOc7zyFVhiOxcHxEAzQEIU3cHdsN-noT4Jj43wBu2TF2iK9qvQ14Gu4vDlHZa8aNW-d_8hpLcuCc4T8c1_5jgZIPhJisUyzUGpjS4aLP3cO883jIs5IlFrp0AO-VwChU9XsRR9kzS7gb-sNdrWsPukSgi1Wl47JSB7ITzeCiD2_SwWgzul_iJ-DydLMZ5VIOijUnFbU1tKyONGkeQ1z3p6-FiNG3SBiMBZ"
-                    />
+                    <img alt="Customer" src="/images/image_6.jpg" />
                   </div>
                   <div>
                     <p className="font-bold text-sm">Julian R.</p>
@@ -272,10 +269,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="size-12 rounded-full bg-stone-300 overflow-hidden">
-                    <img
-                      alt="Customer"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjMS6Ai0MaQTxtSWbt426s3l6cdnDGAYXh2mYq0EHavrMfFVcVLQL_vANPsbVDHXt5gBqsAwZsSOf9I83xHaUlau23Mgkw6OhtkqBxyC1CrdOSdS09I9DqU2frFaPYEA2cncxwFly2WsZHMQKY4tTAD9vOxgIqoWH5U4zXdeZaUWmZRvicaErQm93s-u8IZDuNgmiHk34jB0OR48Sk2U3iNYwPwEl2SULyIYYkhYlgwTQXMjmlelf6cXA16rFluifFcbnvw704lOhN"
-                    />
+                    <img alt="Customer" src="/images/image_7.jpg" />
                   </div>
                   <div>
                     <p className="font-bold text-sm">Marcus V.</p>
@@ -291,10 +285,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="size-12 rounded-full bg-stone-300 overflow-hidden">
-                    <img
-                      alt="Customer"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMwx6N5L81pX436C1hgh-dCTbaCLbJPjNrY-_3XKXa2WTaZbN-LuoWkh36MB5WHVyPpOqMpI4aNWxyy0GyR3ywVmi8PyHcNAkI7mv6QlTPSebpXzLnP6r5uXAA1saOV3kwraHPTZvIs9WMMIexp_2GMA3IZI_JgXji3E8W62FsCzQhQltHXeJPvTvfXa7rxqlMfjqyTSaVThj16IsCJQSAaFxPC09YmAO7VhDJis5i_dn7nypjZ5OOnemesyy64Wq2r1VwBQVjAnLE"
-                    />
+                    <img alt="Customer" src="/images/image_8.jpg" />
                   </div>
                   <div>
                     <p className="font-bold text-sm">Elena G.</p>
