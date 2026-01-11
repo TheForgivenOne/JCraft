@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import MaterialIcon from '@/components/UI/MaterialIcon';
 
 export default function DashboardPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -59,7 +60,7 @@ export default function DashboardPage() {
           <label className="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
             <div className="flex w-full flex-1 items-stretch rounded-lg h-full">
               <div className="text-[#9a734c] flex border-none bg-[#f3ede7] dark:bg-[#3d2e1f] items-center justify-center pl-4 rounded-l-lg" data-icon="search">
-                <span className="material-symbols-outlined">search</span>
+                <MaterialIcon icon="search" />
               </div>
               <input
                 className="form-input flex w-full min-w-0 flex-1 border-none bg-[#f3ede7] dark:bg-[#3d2e1f] text-[#1b140d] dark:text-white focus:ring-0 h-full placeholder:text-[#9a734c] px-4 rounded-r-lg text-sm"
@@ -87,26 +88,26 @@ export default function DashboardPage() {
         <aside className="hidden lg:flex w-64 flex-col border-r border-[#e5e7eb] dark:border-[#3d2e1f] bg-white dark:bg-[#2d2116] p-4 gap-6">
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary">
-              <span className="material-symbols-outlined">dashboard</span>
+              <MaterialIcon icon="dashboard" />
               <p className="text-sm font-medium">Dashboard</p>
             </div>
             <Link href="/dashboard" className="flex items-center gap-3 px-3 py-2 text-[#6b7280] dark:text-[#d1c2b5] hover:bg-background-light dark:hover:bg-[#3d2e1f] rounded-lg transition-colors cursor-pointer">
-              <span className="material-symbols-outlined">handyman</span>
+              <MaterialIcon icon="handyman" />
               <p className="text-sm font-medium">My Commissions</p>
             </Link>
             <Link href="/dashboard/messages" className="flex items-center gap-3 px-3 py-2 text-[#6b7280] dark:text-[#d1c2b5] hover:bg-background-light dark:hover:bg-[#3d2e1f] rounded-lg transition-colors cursor-pointer relative">
-              <span className="material-symbols-outlined">chat_bubble</span>
+              <MaterialIcon icon="chat_bubble" />
               <p className="text-sm font-medium">Messages</p>
               <span className="absolute right-3 top-3 h-2 w-2 rounded-full bg-primary"></span>
             </Link>
             <Link href="/dashboard/history" className="flex items-center gap-3 px-3 py-2 text-[#6b7280] dark:text-[#d1c2b5] hover:bg-background-light dark:hover:bg-[#3d2e1f] rounded-lg transition-colors cursor-pointer">
-              <span className="material-symbols-outlined">history</span>
+              <MaterialIcon icon="history" />
               <p className="text-sm font-medium">Order History</p>
             </Link>
           </div>
           <div className="mt-auto border-t border-[#e5e7eb] dark:border-[#3d2e1f] pt-4">
             <Link href="/dashboard/settings" className="flex items-center gap-3 px-3 py-2 text-[#6b7280] dark:text-[#d1c2b5] hover:bg-background-light dark:hover:bg-[#3d2e1f] rounded-lg transition-colors cursor-pointer">
-              <span className="material-symbols-outlined">settings</span>
+              <MaterialIcon icon="settings" />
               <p className="text-sm font-medium">Settings</p>
             </Link>
           </div>
@@ -146,7 +147,7 @@ export default function DashboardPage() {
                       <p className="text-[#9a734c] font-medium">Est. Oct 24</p>
                     </div>
                     <div className="flex items-center gap-2 mb-6">
-                      <span className="material-symbols-outlined text-primary text-sm">construction</span>
+                      <MaterialIcon icon="construction" className="text-primary text-sm" />
                       <p className="text-[#9a734c] dark:text-[#d1c2b5] text-sm">Phase: <span className="text-[#1b140d] dark:text-white font-semibold">Sanding & Polishing</span></p>
                     </div>
                     {/* Progress Tracker */}
@@ -164,11 +165,11 @@ export default function DashboardPage() {
                   </div>
                   <div className="flex flex-wrap gap-3 pt-4 border-t border-[#f3ede7] dark:border-[#3d2e1f]">
                     <button className="flex-1 min-w-[140px] flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-opacity-90 transition-all">
-                      <span className="material-symbols-outlined text-lg">visibility</span>
+                      <MaterialIcon icon="visibility" className="text-lg" />
                       <span>Full Details</span>
                     </button>
                     <button className="flex-1 min-w-[140px] flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-white dark:bg-transparent border border-[#e5e7eb] dark:border-[#3d2e1f] text-[#1b140d] dark:text-white text-sm font-bold hover:bg-background-light dark:hover:bg-[#3d2e1f] transition-all">
-                      <span className="material-symbols-outlined text-lg">image</span>
+                      <MaterialIcon icon="image" className="text-lg" />
                       <span>Progress Photos</span>
                     </button>
                   </div>
@@ -208,7 +209,7 @@ export default function DashboardPage() {
                       type="text"
                     />
                     <button className="text-primary p-1 hover:bg-primary/10 rounded-full transition-colors">
-                      <span className="material-symbols-outlined">send</span>
+                      <MaterialIcon icon="send" />
                     </button>
                   </div>
                 </div>
@@ -233,7 +234,7 @@ export default function DashboardPage() {
                       <p className="text-xs text-[#9a734c]">Ordered Mar 12, 2023</p>
                     </div>
                     <button className="p-2 text-[#9a734c] hover:text-primary transition-colors">
-                      <span className="material-symbols-outlined">download</span>
+                      <MaterialIcon icon="download" />
                     </button>
                   </div>
                   <div className="p-4 flex items-center gap-4 hover:bg-background-light dark:hover:bg-[#3d2e1f]/50 transition-colors">
@@ -246,7 +247,7 @@ export default function DashboardPage() {
                       <p className="text-xs text-[#9a734c]">Ordered Nov 05, 2022</p>
                     </div>
                     <button className="p-2 text-[#9a734c] hover:text-primary transition-colors">
-                      <span className="material-symbols-outlined">download</span>
+                      <MaterialIcon icon="download" />
                     </button>
                   </div>
                 </div>

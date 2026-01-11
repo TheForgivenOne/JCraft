@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import MaterialIcon from '@/components/UI/MaterialIcon';
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="space-y-6">
           <div className="flex items-center gap-2 text-white">
-            <span className="material-symbols-outlined text-primary text-3xl">carpenter</span>
+            <MaterialIcon icon="carpenter" className="text-primary text-3xl" />
             <span className="text-2xl font-bold tracking-tight">JCraft</span>
           </div>
           <p className="text-sm leading-relaxed">
@@ -14,13 +15,13 @@ export default function Footer() {
           </p>
           <div className="flex gap-4">
             <a className="hover:text-primary transition-colors" href="#">
-              <span className="material-symbols-outlined">public</span>
+              <MaterialIcon icon="public" />
             </a>
             <a className="hover:text-primary transition-colors" href="#">
-              <span className="material-symbols-outlined">camera</span>
+              <MaterialIcon icon="camera" />
             </a>
             <a className="hover:text-primary transition-colors" href="#">
-              <span className="material-symbols-outlined">mail</span>
+              <MaterialIcon icon="mail" />
             </a>
           </div>
         </div>
@@ -84,7 +85,7 @@ export default function Footer() {
               type="email"
             />
             <button className="bg-primary text-white px-4 rounded-r-lg hover:bg-primary/90 transition-colors">
-              <span className="material-symbols-outlined">chevron_right</span>
+              <MaterialIcon icon="chevron_right" />
             </button>
           </div>
         </div>

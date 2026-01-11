@@ -1,5 +1,6 @@
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
+import MaterialIcon from '@/components/UI/MaterialIcon';
 
 export default function AboutPage() {
   return (
@@ -47,7 +48,7 @@ export default function AboutPage() {
               {/* Item 1 */}
               <div className="flex flex-col items-center gap-1">
                 <div className="bg-primary aspect-square rounded-full size-6 flex items-center justify-center text-white shadow-lg">
-                  <span className="material-symbols-outlined text-[14px]">history</span>
+                  <MaterialIcon icon="history" className="text-[14px]" />
                 </div>
                 <div className="w-[2px] bg-clay/30 h-16 grow"></div>
               </div>
@@ -62,7 +63,7 @@ export default function AboutPage() {
               <div className="flex flex-col items-center gap-1">
                 <div className="w-[2px] bg-clay/30 h-6"></div>
                 <div className="bg-forest aspect-square rounded-full size-6 flex items-center justify-center text-white shadow-lg">
-                  <span className="material-symbols-outlined text-[14px]">groups</span>
+                  <MaterialIcon icon="groups" className="text-[14px]" />
                 </div>
                 <div className="w-[2px] bg-clay/30 h-16 grow"></div>
               </div>
@@ -77,7 +78,7 @@ export default function AboutPage() {
               <div className="flex flex-col items-center gap-1">
                 <div className="w-[2px] bg-clay/30 h-6"></div>
                 <div className="bg-primary aspect-square rounded-full size-6 flex items-center justify-center text-white shadow-lg">
-                  <span className="material-symbols-outlined text-[14px]">public</span>
+                  <MaterialIcon icon="public" className="text-[14px]" />
                 </div>
               </div>
               <div className="flex flex-1 flex-col">
@@ -105,7 +106,7 @@ export default function AboutPage() {
               {/* Step 1 */}
               <div className="group bg-white dark:bg-white/5 p-8 rounded-xl border border-cream dark:border-white/10 hover:border-primary transition-all shadow-sm hover:shadow-xl">
                 <div className="size-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-primary group-hover:text-white text-3xl">eco</span>
+                  <MaterialIcon icon="eco" className="text-primary group-hover:text-white text-3xl" />
                 </div>
                 <span className="text-clay text-xs font-bold uppercase tracking-widest mb-2 block">Step 01</span>
                 <h4 className="text-xl font-bold mb-3 text-forest dark:text-white">Source</h4>
@@ -116,7 +117,7 @@ export default function AboutPage() {
               {/* Step 2 */}
               <div className="group bg-white dark:bg-white/5 p-8 rounded-xl border border-cream dark:border-white/10 hover:border-primary transition-all shadow-sm hover:shadow-xl">
                 <div className="size-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-primary group-hover:text-white text-3xl">architecture</span>
+                  <MaterialIcon icon="architecture" className="text-primary group-hover:text-white text-3xl" />
                 </div>
                 <span className="text-clay text-xs font-bold uppercase tracking-widest mb-2 block">Step 02</span>
                 <h4 className="text-xl font-bold mb-3 text-forest dark:text-white">Design</h4>
@@ -127,7 +128,7 @@ export default function AboutPage() {
               {/* Step 3 */}
               <div className="group bg-white dark:bg-white/5 p-8 rounded-xl border border-cream dark:border-white/10 hover:border-primary transition-all shadow-sm hover:shadow-xl">
                 <div className="size-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-primary group-hover:text-white text-3xl">handyman</span>
+                  <MaterialIcon icon="handyman" className="text-primary group-hover:text-white text-3xl" />
                 </div>
                 <span className="text-clay text-xs font-bold uppercase tracking-widest mb-2 block">Step 03</span>
                 <h4 className="text-xl font-bold mb-3 text-forest dark:text-white">Build</h4>
@@ -138,7 +139,7 @@ export default function AboutPage() {
               {/* Step 4 */}
               <div className="group bg-white dark:bg-white/5 p-8 rounded-xl border border-cream dark:border-white/10 hover:border-primary transition-all shadow-sm hover:shadow-xl">
                 <div className="size-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-primary group-hover:text-white text-3xl">verified</span>
+                  <MaterialIcon icon="verified" className="text-primary group-hover:text-white text-3xl" />
                 </div>
                 <span className="text-clay text-xs font-bold uppercase tracking-widest mb-2 block">Step 04</span>
                 <h4 className="text-xl font-bold mb-3 text-forest dark:text-white">Finish</h4>
@@ -161,7 +162,7 @@ export default function AboutPage() {
               {/* Sustainability */}
               <div className="md:col-span-2 bg-white/10 p-10 rounded-2xl flex flex-col justify-between hover:bg-white/15 transition-colors">
                 <div className="mb-12">
-                  <span className="material-symbols-outlined text-4xl text-primary mb-4">recycling</span>
+                  <MaterialIcon icon="recycling" className="text-4xl text-primary mb-4" />
                   <h4 className="text-2xl font-bold mb-4">Sustainability</h4>
                   <p className="text-white/70 text-lg leading-relaxed max-w-lg">
                     We use 100% plastic-free packaging and ethically sourced timber. Our commitment is to leave the workshop—and the world—better than we found it.
@@ -174,7 +175,7 @@ export default function AboutPage() {
               </div>
               {/* Quality */}
               <div className="bg-primary p-10 rounded-2xl flex flex-col justify-center text-white hover:scale-[1.02] transition-transform">
-                <span className="material-symbols-outlined text-5xl mb-6">diamond</span>
+                <MaterialIcon icon="diamond" className="text-5xl mb-6" />
                 <h4 className="text-2xl font-bold mb-4">Timeless Quality</h4>
                 <p className="text-white/90 text-base leading-relaxed">
                   We don't believe in disposability. Every product comes with a lifetime guarantee on craftsmanship.
@@ -182,7 +183,7 @@ export default function AboutPage() {
               </div>
               {/* Community */}
               <div className="bg-clay p-10 rounded-2xl flex flex-col justify-center text-white">
-                <span className="material-symbols-outlined text-5xl mb-6">handshake</span>
+                <MaterialIcon icon="handshake" className="text-5xl mb-6" />
                 <h4 className="text-2xl font-bold mb-4">Community Focused</h4>
                 <p className="text-white/90 text-base leading-relaxed">
                   We mentor local apprentices, keeping heritage crafts alive for the next generation of makers.

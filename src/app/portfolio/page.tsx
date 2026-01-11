@@ -1,5 +1,6 @@
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
+import MaterialIcon from '@/components/UI/MaterialIcon';
 
 export default function PortfolioPage() {
   return (
@@ -10,7 +11,7 @@ export default function PortfolioPage() {
         {/* Breadcrumbs */}
         <nav className="flex items-center gap-2 mb-6">
           <a className="text-[#9a734c] text-sm hover:underline" href="#">Home</a>
-          <span className="material-symbols-outlined text-sm text-[#9a734c]">chevron_right</span>
+          <MaterialIcon icon="chevron_right" className="text-sm text-[#9a734c]" />
           <span className="text-sm font-semibold">Portfolio</span>
         </nav>
         
@@ -24,7 +25,7 @@ export default function PortfolioPage() {
           </div>
           <div className="flex gap-2">
             <button className="px-4 py-2 rounded-lg bg-[#f3ede7] dark:bg-[#3d2e21] text-sm font-semibold flex items-center gap-2">
-              <span className="material-symbols-outlined text-lg">sort</span> Sort by: Latest
+              <MaterialIcon icon="sort" className="text-lg" /> Sort by: Latest
             </button>
           </div>
         </div>
@@ -38,23 +39,23 @@ export default function PortfolioPage() {
                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#9a734c] mb-4">Categories</h3>
                 <div className="flex flex-col gap-1">
                   <a className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary text-white shadow-lg shadow-primary/20" href="#">
-                    <span className="material-symbols-outlined text-xl">grid_view</span>
+                    <MaterialIcon icon="grid_view" className="text-xl" />
                     <span className="text-sm font-semibold">All Works</span>
                   </a>
                   <a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#f3ede7] dark:hover:bg-[#3d2e21] transition-colors" href="#">
-                    <span className="material-symbols-outlined text-xl">chair</span>
+                    <MaterialIcon icon="chair" className="text-xl" />
                     <span className="text-sm font-medium">Furniture</span>
                   </a>
                   <a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#f3ede7] dark:hover:bg-[#3d2e21] transition-colors" href="#">
-                    <span className="material-symbols-outlined text-xl">lightbulb</span>
+                    <MaterialIcon icon="lightbulb" className="text-xl" />
                     <span className="text-sm font-medium">Lighting</span>
                   </a>
                   <a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#f3ede7] dark:hover:bg-[#3d2e21] transition-colors" href="#">
-                    <span className="material-symbols-outlined text-xl">nest_eco_leaf</span>
+                    <MaterialIcon icon="nest_eco_leaf" className="text-xl" />
                     <span className="text-sm font-medium">Home Decor</span>
                   </a>
                   <a className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#f3ede7] dark:hover:bg-[#3d2e21] transition-colors" href="#">
-                    <span className="material-symbols-outlined text-xl">construction</span>
+                    <MaterialIcon icon="construction" className="text-xl" />
                     <span className="text-sm font-medium">Tools</span>
                   </a>
                 </div>
@@ -96,13 +97,13 @@ export default function PortfolioPage() {
               <div className="flex items-center gap-2 bg-[#f3ede7] dark:bg-[#3d2e21] px-3 py-1.5 rounded-full text-xs font-bold">
                 RECLAIMED OAK
                 <button className="hover:text-primary transition-colors">
-                  <span className="material-symbols-outlined text-sm">close</span>
+                  <MaterialIcon icon="close" className="text-sm" />
                 </button>
               </div>
               <div className="flex items-center gap-2 bg-[#f3ede7] dark:bg-[#3d2e21] px-3 py-1.5 rounded-full text-xs font-bold">
                 FURNITURE
                 <button className="hover:text-primary transition-colors">
-                  <span className="material-symbols-outlined text-sm">close</span>
+                  <MaterialIcon icon="close" className="text-sm" />
                 </button>
               </div>
             </div>
@@ -251,7 +252,7 @@ export default function PortfolioPage() {
             {/* Pagination */}
             <div className="mt-16 flex justify-center items-center gap-4">
               <button className="size-10 rounded-lg flex items-center justify-center border border-[#f3ede7] dark:border-[#3d2e21] hover:bg-[#f3ede7] transition-colors disabled:opacity-50" disabled>
-                <span className="material-symbols-outlined">chevron_left</span>
+                <MaterialIcon icon="chevron_left" />
               </button>
               <div className="flex items-center gap-2">
                 <button className="size-10 rounded-lg flex items-center justify-center bg-primary text-white font-bold">1</button>
@@ -261,7 +262,7 @@ export default function PortfolioPage() {
                 <button className="size-10 rounded-lg flex items-center justify-center hover:bg-[#f3ede7] dark:hover:bg-[#3d2e21] font-medium">12</button>
               </div>
               <button className="size-10 rounded-lg flex items-center justify-center border border-[#f3ede7] dark:border-[#3d2e21] hover:bg-[#f3ede7] dark:hover:bg-[#3d2e21] transition-colors">
-                <span className="material-symbols-outlined">chevron_right</span>
+                <MaterialIcon icon="chevron_right" />
               </button>
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import MaterialIcon from '@/components/UI/MaterialIcon';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Header() {
     <nav className="sticky top-0 z-50 w-full border-b border-stone-200 dark:border-stone-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="material-symbols-outlined text-primary text-3xl">carpenter</span>
+          <MaterialIcon icon="carpenter" className="text-primary text-3xl" />
           <Link href="/" className="text-xl font-bold tracking-tight text-deep-oak dark:text-stone-100">
             JCraft
           </Link>
@@ -54,7 +55,7 @@ export default function Header() {
             className="md:hidden text-deep-oak dark:text-stone-100"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <span className="material-symbols-outlined">menu</span>
+            <MaterialIcon icon="menu" />
           </button>
         </div>
       </div>

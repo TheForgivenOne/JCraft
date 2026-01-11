@@ -1,5 +1,6 @@
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
+import MaterialIcon from '@/components/UI/MaterialIcon';
 
 export default function HomePage() {
   return (
@@ -20,7 +21,7 @@ export default function HomePage() {
           <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-10 w-full">
             <div className="max-w-2xl space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 text-primary border border-primary/30 text-xs font-bold uppercase tracking-wider">
-                <span className="material-symbols-outlined text-sm">verified</span>
+                <MaterialIcon icon="verified" className="text-sm" />
                 Master Artisans since 1994
               </div>
               <h1 className="text-5xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">
@@ -45,15 +46,15 @@ export default function HomePage() {
         <div className="bg-deep-oak dark:bg-stone-900 py-8 border-y border-stone-800">
           <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-around items-center gap-8 opacity-70 grayscale contrast-125">
             <div className="flex items-center gap-2 text-stone-400">
-              <span className="material-symbols-outlined text-4xl">workspace_premium</span>
+              <MaterialIcon icon="workspace_premium" className="text-4xl" />
               <span className="text-xs font-bold uppercase tracking-widest">Global Design Award 2023</span>
             </div>
             <div className="flex items-center gap-2 text-stone-400">
-              <span className="material-symbols-outlined text-4xl">eco</span>
+              <MaterialIcon icon="eco" className="text-4xl" />
               <span className="text-xs font-bold uppercase tracking-widest">Sustainable Forestry Certified</span>
             </div>
             <div className="flex items-center gap-2 text-stone-400">
-              <span className="material-symbols-outlined text-4xl">handyman</span>
+              <MaterialIcon icon="handyman" className="text-4xl" />
               <span className="text-xs font-bold uppercase tracking-widest">Master Craftsman Guild</span>
             </div>
           </div>
@@ -69,10 +70,10 @@ export default function HomePage() {
               </div>
               <div className="flex gap-2">
                 <button className="size-12 rounded-full border border-stone-300 dark:border-stone-700 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                  <span className="material-symbols-outlined">arrow_back</span>
+                  <MaterialIcon icon="arrow_back" />
                 </button>
                 <button className="size-12 rounded-full border border-stone-300 dark:border-stone-700 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                  <span className="material-symbols-outlined">arrow_forward</span>
+                  <MaterialIcon icon="arrow_forward" />
                 </button>
               </div>
             </div>
@@ -165,12 +166,12 @@ export default function HomePage() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="p-6 bg-white dark:bg-stone-800 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700">
-                    <span className="material-symbols-outlined text-primary mb-3 text-3xl">nature</span>
+                    <MaterialIcon icon="nature" className="text-primary mb-3 text-3xl" />
                     <h4 className="font-bold text-lg mb-1">Eco-Sourcing</h4>
                     <p className="text-sm text-stone-500">Only reclaimed or sustainably felled local hardwoods.</p>
                   </div>
                   <div className="p-6 bg-white dark:bg-stone-800 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700">
-                    <span className="material-symbols-outlined text-primary mb-3 text-3xl">timer</span>
+                    <MaterialIcon icon="timer" className="text-primary mb-3 text-3xl" />
                     <h4 className="font-bold text-lg mb-1">Slow-Craft</h4>
                     <p className="text-sm text-stone-500">Each piece spends up to 120 hours in our hands.</p>
                   </div>
@@ -186,11 +187,11 @@ export default function HomePage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">From Our Patrons</h2>
               <div className="flex justify-center gap-1 text-primary">
-                <span className="material-symbols-outlined fill-1">star</span>
-                <span className="material-symbols-outlined fill-1">star</span>
-                <span className="material-symbols-outlined fill-1">star</span>
-                <span className="material-symbols-outlined fill-1">star</span>
-                <span className="material-symbols-outlined fill-1">star</span>
+                <MaterialIcon icon="star" className="fill-1" />
+                <MaterialIcon icon="star" className="fill-1" />
+                <MaterialIcon icon="star" className="fill-1" />
+                <MaterialIcon icon="star" className="fill-1" />
+                <MaterialIcon icon="star" className="fill-1" />
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

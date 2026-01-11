@@ -1,5 +1,6 @@
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
+import MaterialIcon from '@/components/UI/MaterialIcon';
 
 export default function ContactPage() {
   return (
@@ -63,7 +64,7 @@ export default function ContactPage() {
                 <div className="flex flex-col w-full">
                   <p className="text-sm font-semibold pb-2">Reference Images</p>
                   <div className="border-2 border-dashed border-[#e7dbcf] dark:border-[#4a3a2a] rounded-xl p-8 flex flex-col items-center justify-center bg-background-light/50 dark:bg-[#1a130d]/50 hover:bg-background-light dark:hover:bg-[#1a130d] transition-colors cursor-pointer group">
-                    <span className="material-symbols-outlined text-4xl text-[#9a734c] group-hover:text-primary transition-colors mb-2">cloud_upload</span>
+                    <MaterialIcon icon="cloud_upload" className="text-4xl text-[#9a734c] group-hover:text-primary transition-colors mb-2" />
                     <p className="text-sm text-[#9a734c] font-medium">Drag and drop or <span className="text-primary underline">browse files</span></p>
                     <p className="text-xs text-[#9a734c]/70 mt-1">JPG, PNG up to 10MB</p>
                   </div>
@@ -73,7 +74,7 @@ export default function ContactPage() {
                   type="submit"
                 >
                   Send Inquiry
-                  <span className="material-symbols-outlined text-sm">send</span>
+                  <MaterialIcon icon="send" className="text-sm" />
                 </button>
               </form>
             </div>
@@ -89,7 +90,7 @@ export default function ContactPage() {
                 />
                 <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
                 <div className="absolute bottom-4 left-4 bg-white dark:bg-[#1b140d] px-4 py-2 rounded-lg shadow-md text-sm font-bold flex items-center gap-2">
-                  <span className="material-symbols-outlined text-primary">location_on</span>
+                  <MaterialIcon icon="location_on" className="text-primary" />
                   420 Artisans Way, Portland, OR
                 </div>
               </div>
@@ -98,7 +99,7 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white dark:bg-[#2d2116] p-6 rounded-xl border border-[#e7dbcf] dark:border-[#3a2d21]">
                   <div className="flex items-center gap-2 mb-4">
-                    <span className="material-symbols-outlined text-primary">schedule</span>
+                    <MaterialIcon icon="schedule" className="text-primary" />
                     <h3 className="font-bold text-lg">Studio Hours</h3>
                   </div>
                   <ul className="space-y-2 text-sm text-[#9a734c] dark:text-[#c5a383]">
@@ -118,16 +119,16 @@ export default function ContactPage() {
                 </div>
                 <div className="bg-white dark:bg-[#2d2116] p-6 rounded-xl border border-[#e7dbcf] dark:border-[#3a2d21]">
                   <div className="flex items-center gap-2 mb-4">
-                    <span className="material-symbols-outlined text-primary">contact_support</span>
+                    <MaterialIcon icon="contact_support" className="text-primary" />
                     <h3 className="font-bold text-lg">Direct Contact</h3>
                   </div>
                   <div className="space-y-3">
                     <a className="flex items-center gap-3 text-sm hover:text-primary transition-colors" href="tel:+15035550123">
-                      <span className="material-symbols-outlined text-lg">call</span>
+                      <MaterialIcon icon="call" className="text-lg" />
                       +1 (503) 555-0123
                     </a>
                     <a className="flex items-center gap-3 text-sm hover:text-primary transition-colors" href="mailto:hello@jcraft.studio">
-                      <span className="material-symbols-outlined text-lg">mail</span>
+                      <MaterialIcon icon="mail" className="text-lg" />
                       hello@jcraft.studio
                     </a>
                   </div>
