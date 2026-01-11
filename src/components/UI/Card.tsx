@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface CardProps {
   children: React.ReactNode;
   className?: string;
@@ -23,10 +25,13 @@ export default function Card({
     >
       {image && (
         <div className="relative aspect-[4/5] overflow-hidden">
-          <img
+          <Image
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             src={image}
             alt={title || "Card image"}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+            style={{ objectFit: "cover" }}
           />
           <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
             <button className="bg-white text-[#1b140d] px-6 py-3 rounded-lg font-bold shadow-xl hover:bg-primary hover:text-white transition-colors">

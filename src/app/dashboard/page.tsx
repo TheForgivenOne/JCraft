@@ -1,15 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import MaterialIcon from "@/components/UI/MaterialIcon";
 import Button from "@/components/UI/Button";
 
 export default function DashboardPage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const pathname = usePathname();
-
   // Mock user data since we're not using Clerk anymore
   const user = { firstName: "Alex" };
   const isSignedIn = true; // In a real app, you'd manage authentication differently

@@ -54,7 +54,6 @@ export default function PortfolioGrid() {
       {portfolioItems.map((item) => (
         <PortfolioItem
           key={item.id}
-          id={item.id}
           title={item.title}
           description={item.description}
           imageUrl={item.imageUrl}

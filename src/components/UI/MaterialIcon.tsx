@@ -3,14 +3,12 @@ import React from "react";
 interface MaterialIconProps {
   icon: string;
   className?: string;
-  filled?: boolean;
   size?: "small" | "normal" | "large" | number;
 }
 
 const MaterialIcon: React.FC<MaterialIconProps> = ({
   icon,
   className = "",
-  filled = false,
   size = "normal",
 }) => {
   // Determine size classes

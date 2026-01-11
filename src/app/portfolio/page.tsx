@@ -6,6 +6,7 @@ import MaterialIcon from "@/components/UI/MaterialIcon";
 import Button from "@/components/UI/Button";
 import Chip from "@/components/UI/Chip";
 import Checkbox from "@/components/UI/Checkbox";
+import Image from "next/image";
 
 export default function PortfolioPage() {
   return (
@@ -151,10 +152,13 @@ export default function PortfolioPage() {
               {/* Card 1 */}
               <div className="group craft-card relative flex flex-col overflow-hidden bg-white dark:bg-[#2b2118] rounded-xl border border-[#f3ede7] dark:border-[#3d2e21] hover:shadow-2xl hover:shadow-primary/5 transition-all">
                 <div className="relative aspect-[4/5] overflow-hidden">
-                  <img
+                  <Image
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     src="/images/image_17.jpg"
                     alt="Handcrafted oak dining table detailed view"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    style={{ objectFit: "cover" }}
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
                     <Button
@@ -182,10 +186,13 @@ export default function PortfolioPage() {
               {/* Card 2 */}
               <div className="group craft-card relative flex flex-col overflow-hidden bg-white dark:bg-[#2b2118] rounded-xl border border-[#f3ede7] dark:border-[#3d2e21] hover:shadow-2xl hover:shadow-primary/5 transition-all">
                 <div className="relative aspect-[4/5] overflow-hidden">
-                  <img
+                  <Image
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     src="/images/image_18.jpg"
                     alt="Minimalist forged iron wall sconce lighting"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    style={{ objectFit: "cover" }}
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
                     <Button
@@ -213,10 +220,13 @@ export default function PortfolioPage() {
               {/* Card 3 */}
               <div className="group craft-card relative flex flex-col overflow-hidden bg-white dark:bg-[#2b2118] rounded-xl border border-[#f3ede7] dark:border-[#3d2e21] hover:shadow-2xl hover:shadow-primary/5 transition-all">
                 <div className="relative aspect-[4/5] overflow-hidden">
-                  <img
+                  <Image
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     src="/images/image_19.jpg"
                     alt="Stitched leather artisan satchel bag"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    style={{ objectFit: "cover" }}
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
                     <Button
@@ -244,10 +254,13 @@ export default function PortfolioPage() {
               {/* Card 4 */}
               <div className="group craft-card relative flex flex-col overflow-hidden bg-white dark:bg-[#2b2118] rounded-xl border border-[#f3ede7] dark:border-[#3d2e21] hover:shadow-2xl hover:shadow-primary/5 transition-all">
                 <div className="relative aspect-[4/5] overflow-hidden">
-                  <img
+                  <Image
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     src="/images/image_20.jpg"
                     alt="Brushed brass tabletop minimalist clock"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    style={{ objectFit: "cover" }}
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
                     <Button
@@ -275,10 +288,13 @@ export default function PortfolioPage() {
               {/* Card 5 */}
               <div className="group craft-card relative flex flex-col overflow-hidden bg-white dark:bg-[#2b2118] rounded-xl border border-[#f3ede7] dark:border-[#3d2e21] hover:shadow-2xl hover:shadow-primary/5 transition-all">
                 <div className="relative aspect-[4/5] overflow-hidden">
-                  <img
+                  <Image
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     src="/images/image_21.jpg"
                     alt="Sculptural wooden lounge chair design"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    style={{ objectFit: "cover" }}
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
                     <Button
@@ -306,10 +322,13 @@ export default function PortfolioPage() {
               {/* Card 6 */}
               <div className="group craft-card relative flex flex-col overflow-hidden bg-white dark:bg-[#2b2118] rounded-xl border border-[#f3ede7] dark:border-[#3d2e21] hover:shadow-2xl hover:shadow-primary/5 transition-all">
                 <div className="relative aspect-[4/5] overflow-hidden">
-                  <img
+                  <Image
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     src="/images/image_22.jpg"
                     alt="Traditional handmade chisels on wood workbench"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    style={{ objectFit: "cover" }}
                   />
                   <div className="hover-overlay absolute inset-0 bg-primary/20 backdrop-blur-[2px] opacity-0 transition-opacity duration-300 flex items-center justify-center">
                     <Button

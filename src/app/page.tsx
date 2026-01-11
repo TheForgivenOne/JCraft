@@ -2,6 +2,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import MaterialIcon from "@/components/UI/MaterialIcon";
 import Button from "@/components/UI/Button";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -13,10 +14,13 @@ export default function HomePage() {
         <section className="relative w-full min-h-[85vh] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-r from-background-dark/80 via-background-dark/40 to-transparent z-10"></div>
-            <img
+            <Image
               alt="Premium Wood Texture"
               className="w-full h-full object-cover"
               src="/images/image_1.jpg"
+              fill
+              sizes="100vw"
+              style={{ objectFit: "cover" }}
             />
           </div>
           <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-10 w-full">
@@ -102,10 +106,13 @@ export default function HomePage() {
               {/* Card 1 */}
               <div className="group cursor-pointer">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-stone-200">
-                  <img
+                  <Image
                     alt="Oak Dining Table"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/images/image_2.jpg"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    style={{ objectFit: "cover" }}
                   />
                   <div className="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <button className="bg-white/90 text-background-dark px-6 py-3 rounded-lg font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -125,10 +132,13 @@ export default function HomePage() {
               {/* Card 2 */}
               <div className="group cursor-pointer">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-stone-200">
-                  <img
+                  <Image
                     alt="Walnut Credenza"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/images/image_3.jpg"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    style={{ objectFit: "cover" }}
                   />
                   <div className="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <button className="bg-white/90 text-background-dark px-6 py-3 rounded-lg font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -148,10 +158,13 @@ export default function HomePage() {
               {/* Card 3 */}
               <div className="group cursor-pointer">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-stone-200">
-                  <img
+                  <Image
                     alt="Mahogany Lounge Chair"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/images/image_4.jpg"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    style={{ objectFit: "cover" }}
                   />
                   <div className="absolute inset-0 bg-background-dark/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <button className="bg-white/90 text-background-dark px-6 py-3 rounded-lg font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">
@@ -178,10 +191,13 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
-                  <img
+                  <Image
                     alt="Craftsman at Work"
                     className="w-full h-full object-cover"
                     src="/images/image_5.jpg"
+                    fill
+                    sizes="(max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: "cover" }}
                   />
                 </div>
                 <div className="absolute -bottom-8 -right-8 bg-primary p-8 rounded-2xl hidden md:block shadow-xl max-w-[240px]">
@@ -252,8 +268,14 @@ export default function HomePage() {
                   heirloom piece.&quot;
                 </p>
                 <div className="flex items-center gap-4">
-                  <div className="size-12 rounded-full bg-stone-300 overflow-hidden">
-                    <img alt="Customer" src="/images/image_6.jpg" />
+                  <div className="size-12 rounded-full bg-stone-300 overflow-hidden relative">
+                    <Image
+                      alt="Customer"
+                      src="/images/image_6.jpg"
+                      fill
+                      sizes="48px"
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
                   <div>
                     <p className="font-bold text-sm">Julian R.</p>
@@ -268,8 +290,14 @@ export default function HomePage() {
                   dovetails are flawless.&quot;
                 </p>
                 <div className="flex items-center gap-4">
-                  <div className="size-12 rounded-full bg-stone-300 overflow-hidden">
-                    <img alt="Customer" src="/images/image_7.jpg" />
+                  <div className="size-12 rounded-full bg-stone-300 overflow-hidden relative">
+                    <Image
+                      alt="Customer"
+                      src="/images/image_7.jpg"
+                      fill
+                      sizes="48px"
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
                   <div>
                     <p className="font-bold text-sm">Marcus V.</p>
@@ -284,8 +312,14 @@ export default function HomePage() {
                   the difference.&quot;
                 </p>
                 <div className="flex items-center gap-4">
-                  <div className="size-12 rounded-full bg-stone-300 overflow-hidden">
-                    <img alt="Customer" src="/images/image_8.jpg" />
+                  <div className="size-12 rounded-full bg-stone-300 overflow-hidden relative">
+                    <Image
+                      alt="Customer"
+                      src="/images/image_8.jpg"
+                      fill
+                      sizes="48px"
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
                   <div>
                     <p className="font-bold text-sm">Elena G.</p>

@@ -1,6 +1,7 @@
 import Header from "@/components/Header/Header";
 import ContactForm from "@/components/Contact/ContactForm";
 import MaterialIcon from "@/components/UI/MaterialIcon";
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
@@ -35,10 +36,13 @@ export default function ContactPage() {
             <div className="flex flex-col gap-8">
               {/* Map Section */}
               <div className="w-full rounded-xl overflow-hidden border border-[#e7dbcf] dark:border-[#3a2d21] h-[300px] relative">
-                <img
+                <Image
                   className="w-full h-full object-cover"
                   src="/images/image_12.jpg"
                   alt="A clean map showing the workshop location in a city"
+                  fill
+                  sizes="(max-width: 1200px) 50vw, 33vw"
+                  style={{ objectFit: "cover" }}
                 />
                 <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
                 <div className="absolute bottom-4 left-4 bg-white dark:bg-[#1b140d] px-4 py-2 rounded-lg shadow-md text-sm font-bold flex items-center gap-2">

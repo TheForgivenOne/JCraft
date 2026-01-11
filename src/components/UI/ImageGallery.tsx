@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface ImageGalleryProps {
   images: string[];
@@ -31,10 +32,13 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
           >
-            <img
+            <Image
               src={image}
               alt={`Gallery item ${index + 1}`}
               className="w-full h-full object-contain"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ objectFit: "contain" }}
             />
           </div>
         ))}
