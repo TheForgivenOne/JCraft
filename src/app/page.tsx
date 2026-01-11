@@ -1,6 +1,6 @@
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
-import MaterialIcon from '@/components/UI/MaterialIcon';
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
+import MaterialIcon from "@/components/UI/MaterialIcon";
 
 export default function HomePage() {
   return (
@@ -25,10 +25,11 @@ export default function HomePage() {
                 Master Artisans since 1994
               </div>
               <h1 className="text-5xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">
-                Crafted with Soul, <br/> Built for Generations
+                Crafted with Soul, <br /> Built for Generations
               </h1>
               <p className="text-lg lg:text-xl text-stone-200 font-light leading-relaxed max-w-lg">
-                Bespoke furniture and artisanal goods, handmade with precision in our mountain workshop.
+                Bespoke furniture and artisanal goods, handmade with precision
+                in our mountain workshop.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <button className="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-xl">
@@ -47,15 +48,21 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-around items-center gap-8 opacity-70 grayscale contrast-125">
             <div className="flex items-center gap-2 text-stone-400">
               <MaterialIcon icon="workspace_premium" className="text-4xl" />
-              <span className="text-xs font-bold uppercase tracking-widest">Global Design Award 2023</span>
+              <span className="text-xs font-bold uppercase tracking-widest">
+                Global Design Award 2023
+              </span>
             </div>
             <div className="flex items-center gap-2 text-stone-400">
               <MaterialIcon icon="eco" className="text-4xl" />
-              <span className="text-xs font-bold uppercase tracking-widest">Sustainable Forestry Certified</span>
+              <span className="text-xs font-bold uppercase tracking-widest">
+                Sustainable Forestry Certified
+              </span>
             </div>
             <div className="flex items-center gap-2 text-stone-400">
               <MaterialIcon icon="handyman" className="text-4xl" />
-              <span className="text-xs font-bold uppercase tracking-widest">Master Craftsman Guild</span>
+              <span className="text-xs font-bold uppercase tracking-widest">
+                Master Craftsman Guild
+              </span>
             </div>
           </div>
         </div>
@@ -65,8 +72,12 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="flex justify-between items-end mb-12">
               <div>
-                <span className="text-primary font-bold uppercase tracking-widest text-sm mb-2 block">Our Collection</span>
-                <h2 className="text-4xl font-black text-deep-oak dark:text-stone-100 tracking-tight">Featured Works</h2>
+                <span className="text-primary font-bold uppercase tracking-widest text-sm mb-2 block">
+                  Our Collection
+                </span>
+                <h2 className="text-4xl font-black text-deep-oak dark:text-stone-100 tracking-tight">
+                  Featured Works
+                </h2>
               </div>
               <div className="flex gap-2">
                 <button className="size-12 rounded-full border border-stone-300 dark:border-stone-700 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
@@ -94,8 +105,12 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="mt-6">
-                  <p className="text-stone-500 text-sm font-medium">Solid White Oak</p>
-                  <h3 className="text-xl font-bold text-deep-oak dark:text-stone-100">Nordic Dining Table</h3>
+                  <p className="text-stone-500 text-sm font-medium">
+                    Solid White Oak
+                  </p>
+                  <h3 className="text-xl font-bold text-deep-oak dark:text-stone-100">
+                    Nordic Dining Table
+                  </h3>
                 </div>
               </div>
               {/* Card 2 */}
@@ -113,8 +128,12 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="mt-6">
-                  <p className="text-stone-500 text-sm font-medium">American Black Walnut</p>
-                  <h3 className="text-xl font-bold text-deep-oak dark:text-stone-100">Executive Credenza</h3>
+                  <p className="text-stone-500 text-sm font-medium">
+                    American Black Walnut
+                  </p>
+                  <h3 className="text-xl font-bold text-deep-oak dark:text-stone-100">
+                    Executive Credenza
+                  </h3>
                 </div>
               </div>
               {/* Card 3 */}
@@ -132,8 +151,12 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="mt-6">
-                  <p className="text-stone-500 text-sm font-medium">Hand-polished Mahogany</p>
-                  <h3 className="text-xl font-bold text-deep-oak dark:text-stone-100">Artisan Lounge Chair</h3>
+                  <p className="text-stone-500 text-sm font-medium">
+                    Hand-polished Mahogany
+                  </p>
+                  <h3 className="text-xl font-bold text-deep-oak dark:text-stone-100">
+                    Artisan Lounge Chair
+                  </h3>
                 </div>
               </div>
             </div>
@@ -153,27 +176,45 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="absolute -bottom-8 -right-8 bg-primary p-8 rounded-2xl hidden md:block shadow-xl max-w-[240px]">
-                  <p className="text-white text-3xl font-black italic">"Every knot tells a story."</p>
+                  <p className="text-white text-3xl font-black italic">
+                    &quot;Every knot tells a story.&quot;
+                  </p>
                 </div>
               </div>
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <span className="text-primary font-bold uppercase tracking-widest text-sm">Philosophy</span>
-                  <h2 className="text-4xl lg:text-5xl font-black text-deep-oak dark:text-stone-100 leading-tight">The JCraft Method</h2>
+                  <span className="text-primary font-bold uppercase tracking-widest text-sm">
+                    Philosophy
+                  </span>
+                  <h2 className="text-4xl lg:text-5xl font-black text-deep-oak dark:text-stone-100 leading-tight">
+                    The JCraft Method
+                  </h2>
                   <p className="text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
-                    Our philosophy focuses on sustainability, slow-crafting, and using locally sourced timber to create pieces that last a lifetime. We don't believe in shortcuts, only soul.
+                    Our philosophy focuses on sustainability, slow-crafting, and
+                    using locally sourced timber to create pieces that last a
+                    lifetime. We don&apos;t believe in shortcuts, only soul.
                   </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="p-6 bg-white dark:bg-stone-800 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700">
-                    <MaterialIcon icon="nature" className="text-primary mb-3 text-3xl" />
+                    <MaterialIcon
+                      icon="nature"
+                      className="text-primary mb-3 text-3xl"
+                    />
                     <h4 className="font-bold text-lg mb-1">Eco-Sourcing</h4>
-                    <p className="text-sm text-stone-500">Only reclaimed or sustainably felled local hardwoods.</p>
+                    <p className="text-sm text-stone-500">
+                      Only reclaimed or sustainably felled local hardwoods.
+                    </p>
                   </div>
                   <div className="p-6 bg-white dark:bg-stone-800 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700">
-                    <MaterialIcon icon="timer" className="text-primary mb-3 text-3xl" />
+                    <MaterialIcon
+                      icon="timer"
+                      className="text-primary mb-3 text-3xl"
+                    />
                     <h4 className="font-bold text-lg mb-1">Slow-Craft</h4>
-                    <p className="text-sm text-stone-500">Each piece spends up to 120 hours in our hands.</p>
+                    <p className="text-sm text-stone-500">
+                      Each piece spends up to 120 hours in our hands.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -196,7 +237,11 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="p-8 bg-stone-50 dark:bg-stone-900 rounded-2xl italic border-t-4 border-primary">
-                <p className="text-lg text-stone-700 dark:text-stone-300 mb-6">"The walnut credenza is the centerpiece of our home. You can still smell the fresh oil and wood months later. Truly an heirloom piece."</p>
+                <p className="text-lg text-stone-700 dark:text-stone-300 mb-6">
+                  &quot;The walnut credenza is the centerpiece of our home. You
+                  can still smell the fresh oil and wood months later. Truly an
+                  heirloom piece.&quot;
+                </p>
                 <div className="flex items-center gap-4">
                   <div className="size-12 rounded-full bg-stone-300 overflow-hidden">
                     <img
@@ -211,7 +256,11 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="p-8 bg-stone-50 dark:bg-stone-900 rounded-2xl italic border-t-4 border-primary">
-                <p className="text-lg text-stone-700 dark:text-stone-300 mb-6">"Finding furniture that balances modern aesthetics with traditional joinery is rare. JCraft mastered both. The dovetails are flawless."</p>
+                <p className="text-lg text-stone-700 dark:text-stone-300 mb-6">
+                  &quot;Finding furniture that balances modern aesthetics with
+                  traditional joinery is rare. JCraft mastered both. The
+                  dovetails are flawless.&quot;
+                </p>
                 <div className="flex items-center gap-4">
                   <div className="size-12 rounded-full bg-stone-300 overflow-hidden">
                     <img
@@ -226,7 +275,11 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="p-8 bg-stone-50 dark:bg-stone-900 rounded-2xl italic border-t-4 border-primary">
-                <p className="text-lg text-stone-700 dark:text-stone-300 mb-6">"Sustainability was my priority. Knowing where my table came from and the name of the artisan who built it makes all the difference."</p>
+                <p className="text-lg text-stone-700 dark:text-stone-300 mb-6">
+                  &quot;Sustainability was my priority. Knowing where my table
+                  came from and the name of the artisan who built it makes all
+                  the difference.&quot;
+                </p>
                 <div className="flex items-center gap-4">
                   <div className="size-12 rounded-full bg-stone-300 overflow-hidden">
                     <img

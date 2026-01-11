@@ -3,9 +3,9 @@
 /**
  * Debounces a function for performance optimization
  */
-export function debounce<T extends (...args: any[]) => any>(
+export function debounce<T extends (...args: Parameters<T>) => ReturnType<T>>(
   func: T,
-  wait: number
+  wait: number,
 ): (...args: Parameters<T>) => void {
   let timeout: NodeJS.Timeout | null = null;
   return (...args: Parameters<T>): void => {
@@ -19,9 +19,12 @@ export function debounce<T extends (...args: any[]) => any>(
 /**
  * Formats currency values
  */
-export function formatCurrency(amount: number, currency: string = 'USD'): string {
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
+export function formatCurrency(
+  amount: number,
+  currency: string = "USD",
+): string {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
     currency,
   }).format(amount);
 }
@@ -30,28 +33,35 @@ export function formatCurrency(amount: number, currency: string = 'USD'): string
  * Generates a random ID
  */
 export function generateId(): string {
-  return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+  return (
+    Math.random().toString(36).substring(2, 15) +
+    Math.random().toString(36).substring(2, 15)
+  );
 }
 
 /**
  * Checks if a value is empty
  */
-export function isEmpty(value: any): boolean {
+export function isEmpty(value: unknown): boolean {
   if (value === null || value === undefined) {
     return true;
   }
-  
-  if (typeof value === 'string' && value.trim() === '') {
+
+  if (typeof value === "string" && value.trim() === "") {
     return true;
   }
-  
+
   if (Array.isArray(value) && value.length === 0) {
     return true;
   }
-  
-  if (typeof value === 'object' && Object.keys(value).length === 0) {
+
+  if (
+    typeof value === "object" &&
+    value !== null &&
+    Object.keys(value).length === 0
+  ) {
     return true;
   }
-  
+
   return false;
 }
