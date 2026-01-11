@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+set -e
+
+echo "Running pre-commit checks..."
+
+# Run linting on staged files only
+npx lint-staged
+
+# Run type checking
+npx tsc --noEmit
+
+echo "Pre-commit checks passed!"

@@ -29,12 +29,14 @@ JCraft is a personal business website for a skilled craftsman, designed to showc
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd jcraft
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -42,6 +44,7 @@ JCraft is a personal business website for a skilled craftsman, designed to showc
    ```
 
 3. Run the development server:
+
    ```bash
    npm run dev
    # or
@@ -77,15 +80,46 @@ This project follows a modular, expandable, and dynamic structure with simple, r
 - Add customer reviews and ratings
 - Enhance dashboard functionality
 
+## Continuous Integration
+
+This project uses GitHub Actions for continuous integration. The CI workflow includes:
+
+- Code linting with ESLint
+- Type checking with TypeScript
+- Production build validation
+- Security scanning with CodeQL and truffleHog
+- Dependency vulnerability auditing
+- Code quality checks with Prettier and Knip
+- Performance testing with Lighthouse CI
+- Automated dependency updates with Dependabot
+- Automated release creation when tags are pushed
+
+The workflow runs on every push and pull request to the main branch.
+
+## Git Hooks with Husky
+
+This project uses Husky to run automated checks before commits and pushes:
+
+- **Pre-commit**: Runs linting and type checking on staged files
+- **Pre-push**: Runs build validation and comprehensive linting
+
+These hooks help maintain code quality by catching issues early in the development process.
+
 ## Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feat/amazing-feature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add amazing feature'`)
-5. Push to the branch (`git push origin feat/amazing-feature`)
-6. Open a Pull Request
+2. After cloning, run `npx husky install` to set up Git hooks (only needed once after initial clone)
+3. Create a feature branch (`git checkout -b feat/amazing-feature`)
+4. Make your changes
+5. Ensure your code passes linting (`npm run lint`)
+6. Run type checking (`npx tsc --noEmit`)
+7. Test the build (`npm run build`)
+8. Commit your changes (`git commit -m 'Add amazing feature'`) - this will trigger pre-commit checks
+9. Push to the branch (`git push origin feat/amazing-feature`) - this will trigger pre-push checks
+10. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License.
+This project is proprietary and all rights are reserved. Redistribution, commercial use, and modification of this software are prohibited without explicit written permission from the copyright holder.
+
+For licensing inquiries, please contact the project owner.

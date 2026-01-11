@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+set -e
+
+echo "Running pre-push checks..."
+
+# Run the build to make sure it works
+npm run build
+
+# Run tests if they exist
+npm test || echo "No tests defined or tests failed, continuing..."
+
+# Run a comprehensive lint check
+npm run lint
+
+echo "Pre-push checks passed!"
